@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <title>Index Method Table for 12, 18, 24</title>
+  <desc>Prime powers table showing highest powers of primes for 12, 18, and 24; LCM is 2^3 × 3^2 = 72.</desc>
+  <rect width="1200" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="600" y="50" font-size="28" text-anchor="middle" font-weight="bold">Index Method — Highest Powers</text>
+    <g transform="translate(150,100)" font-size="18">
+      <!-- table -->
+      <rect x="0" y="0" width="900" height="260" fill="none" stroke="#111" stroke-width="2"/>
+      <!-- columns: primes, 12, 18, 24, highest -->
+      <line x1="180" y1="0" x2="180" y2="260" stroke="#111"/>
+      <line x1="360" y1="0" x2="360" y2="260" stroke="#111"/>
+      <line x1="540" y1="0" x2="540" y2="260" stroke="#111"/>
+      <line x1="720" y1="0" x2="720" y2="260" stroke="#111"/>
+      <line x1="900" y1="0" x2="900" y2="260" stroke="#111"/>
+      <line x1="0" y1="60" x2="900" y2="60" stroke="#111"/>
+      <line x1="0" y1="140" x2="900" y2="140" stroke="#111"/>
+      <line x1="0" y1="200" x2="900" y2="200" stroke="#111"/>
+      <!-- headers -->
+      <text x="90" y="40" text-anchor="middle" font-weight="bold">Prime</text>
+      <text x="270" y="40" text-anchor="middle" font-weight="bold">12</text>
+      <text x="450" y="40" text-anchor="middle" font-weight="bold">18</text>
+      <text x="630" y="40" text-anchor="middle" font-weight="bold">24</text>
+      <text x="810" y="40" text-anchor="middle" font-weight="bold">Highest</text>
+      <!-- rows -->
+      <text x="90" y="100">2</text>
+      <text x="270" y="100">2²</text>
+      <text x="450" y="100">2¹</text>
+      <text x="630" y="100">2³</text>
+      <text x="810" y="100" fill="#2563eb" font-weight="bold">2³</text>
+      
+      <text x="90" y="180">3</text>
+      <text x="270" y="180">3¹</text>
+      <text x="450" y="180">3²</text>
+      <text x="630" y="180">3¹</text>
+      <text x="810" y="180" fill="#2563eb" font-weight="bold">3²</text>
+    </g>
+    <text x="600" y="410" font-size="22" text-anchor="middle">LCM = 2³ × 3² = 8 × 9 = <tspan font-weight="bold">72</tspan></text>
+  </g>
+</svg>
+

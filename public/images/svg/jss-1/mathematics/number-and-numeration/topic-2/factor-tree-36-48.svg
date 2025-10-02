@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <title>Factor Trees for 36 and 48</title>
+  <desc>Prime factorization trees: 36 = 2×2×3×3 and 48 = 2×2×2×2×3.</desc>
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#111" text-anchor="middle">
+    <!-- 36 tree -->
+    <g transform="translate(300,80)">
+      <text x="0" y="0" font-weight="bold">36</text>
+      <line x1="0" y1="10" x2="-100" y2="90" stroke="#2563eb" stroke-width="2"/>
+      <line x1="0" y1="10" x2="100" y2="90" stroke="#2563eb" stroke-width="2"/>
+      <text x="-100" y="120">6</text>
+      <text x="100" y="120">6</text>
+      <!-- left 6 split -->
+      <line x1="-100" y1="130" x2="-160" y2="210" stroke="#2563eb" stroke-width="2"/>
+      <line x1="-100" y1="130" x2="-40" y2="210" stroke="#2563eb" stroke-width="2"/>
+      <text x="-160" y="240">2</text>
+      <text x="-40" y="240">3</text>
+      <!-- right 6 split -->
+      <line x1="100" y1="130" x2="40" y2="210" stroke="#2563eb" stroke-width="2"/>
+      <line x1="100" y1="130" x2="160" y2="210" stroke="#2563eb" stroke-width="2"/>
+      <text x="40" y="240">2</text>
+      <text x="160" y="240">3</text>
+      <text x="0" y="300" fill="#059669">36 = 2² × 3²</text>
+    </g>
+    <!-- 48 tree -->
+    <g transform="translate(900,80)">
+      <text x="0" y="0" font-weight="bold">48</text>
+      <line x1="0" y1="10" x2="-100" y2="90" stroke="#7c3aed" stroke-width="2"/>
+      <line x1="0" y1="10" x2="100" y2="90" stroke="#7c3aed" stroke-width="2"/>
+      <text x="-100" y="120">6</text>
+      <text x="100" y="120">8</text>
+      <!-- 6 split -->
+      <line x1="-100" y1="130" x2="-160" y2="210" stroke="#7c3aed" stroke-width="2"/>
+      <line x1="-100" y1="130" x2="-40" y2="210" stroke="#7c3aed" stroke-width="2"/>
+      <text x="-160" y="240">2</text>
+      <text x="-40" y="240">3</text>
+      <!-- 8 split -->
+      <line x1="100" y1="130" x2="60" y2="210" stroke="#7c3aed" stroke-width="2"/>
+      <line x1="100" y1="130" x2="140" y2="210" stroke="#7c3aed" stroke-width="2"/>
+      <text x="60" y="240">2</text>
+      <text x="140" y="240">4</text>
+      <!-- 4 split -->
+      <line x1="140" y1="250" x2="110" y2="330" stroke="#7c3aed" stroke-width="2"/>
+      <line x1="140" y1="250" x2="170" y2="330" stroke="#7c3aed" stroke-width="2"/>
+      <text x="110" y="360">2</text>
+      <text x="170" y="360">2</text>
+      <text x="0" y="420" fill="#059669">48 = 2⁴ × 3</text>
+    </g>
+  </g>
+</svg>
+

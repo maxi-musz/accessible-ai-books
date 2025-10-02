@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
+  <title>LCM Word Problem — Bus Schedule</title>
+  <desc>Two buses: one every 12 minutes, another every 18 minutes. Timeline shows first meet again at 36 minutes (LCM).</desc>
+  <rect width="1000" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="500" y="40" text-anchor="middle" font-size="24" font-weight="bold">Bus Schedules — When do they meet?</text>
+    <!-- Timeline -->
+    <line x1="80" y1="150" x2="920" y2="150" stroke="#111" stroke-width="2"/>
+    <!-- Marks every 6 minutes (for reference) -->
+    <g font-size="14" text-anchor="middle">
+      <!-- positions: map t (minutes) to x = 80 + t*10 -->
+      <g fill="#111">
+        <text x="80" y="180">0</text>
+        <text x="200" y="180">12</text>
+        <text x="260" y="180">18</text>
+        <text x="320" y="180">24</text>
+        <text x="440" y="180">36</text>
+        <text x="560" y="180">48</text>
+        <text x="680" y="180">60</text>
+      </g>
+      <!-- Bus A (every 12) markers in blue -->
+      <g fill="#2563eb">
+        <circle cx="80" cy="150" r="5"/>
+        <circle cx="200" cy="150" r="5"/>
+        <circle cx="320" cy="150" r="5"/>
+        <circle cx="440" cy="150" r="5"/>
+        <circle cx="560" cy="150" r="5"/>
+        <circle cx="680" cy="150" r="5"/>
+      </g>
+      <!-- Bus B (every 18) markers in green -->
+      <g fill="#059669">
+        <rect x="76" y="146" width="8" height="8"/>
+        <rect x="256" y="146" width="8" height="8"/>
+        <rect x="440" y="146" width="8" height="8"/>
+        <rect x="620" y="146" width="8" height="8"/>
+      </g>
+      <!-- First meet at 36 -->
+      <g>
+        <circle cx="440" cy="150" r="16" fill="none" stroke="#ea580c" stroke-width="4"/>
+        <text x="440" y="210" fill="#ea580c" font-weight="bold">36 min</text>
+      </g>
+    </g>
+    <!-- Legend -->
+    <g font-size="16">
+      <rect x="80" y="260" width="16" height="16" fill="#2563eb"/>
+      <text x="104" y="272">Bus A — every 12 minutes</text>
+      <rect x="360" y="260" width="16" height="16" fill="#059669"/>
+      <text x="384" y="272">Bus B — every 18 minutes</text>
+      <circle cx="680" cy="268" r="10" fill="none" stroke="#ea580c" stroke-width="3"/>
+      <text x="700" y="272">Meet together — LCM(12,18) = 36</text>
+    </g>
+  </g>
+</svg>
+
