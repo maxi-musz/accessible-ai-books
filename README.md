@@ -1,489 +1,124 @@
-# 📚 Accessible Books - AI-Powered Textbook Platform
+# Accessible Books - Educational Content Platform
 
-A professional Next.js application for generating and managing accessible educational textbooks for Nigerian curriculum (Primary and JSS levels).
+## Global Subject Structure Requirements
 
-## 🎯 Project Overview
+### 1. **Subject Contents Page (Chapters)**
+- Every new subject MUST have a complete contents page showing all chapters
+- Contents page appears as **PAGE 1** when viewing/downloading full content (like a real textbook)
+- Must define complete chapter structure before starting content creation
+- All content is in ONE continuous document for PDF generation
 
-This platform generates complete, government-approved textbooks with:
-- **Full curriculum alignment** (NERDC approved)
-- **Rich multimedia content** (images, videos, interactive elements)
-- **PDF generation** for offline use
-- **Progress tracking** with localStorage
-- **Responsive design** for all devices
+### 2. **Required Subject Setup Steps**
+1. **Update contents map** in `/src/app/classes/[className]/[subject]/view-full/page.tsx`
+2. **Add SUBJECT_CONTENTS_MAP entry** with:
+   - `chapterNumber`: Sequential number (1, 2, 3...)
+   - `title`: Chapter name
+   - `topics`: Array of topic titles (exactly as they will appear)
+   - `pages`: Page count estimate
+3. **Create topic files** in `/src/content/data/[class]/[subject]/[chapter]/`
+4. **Update content registry** if new class/subject
 
----
-
-## 🏗️ Tech Stack
-
-- **Framework:** Next.js 15+ (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Content:** TypeScript files (version controlled)
-- **PDF Generation:** Puppeteer
-- **Icons:** Heroicons
-
----
-
-## 📁 Project Structure
-
+### 3. **Content Structure**
 ```
-accessible-books/
-├── src/
-│   ├── app/                        # Next.js pages
-│   │   ├── page.tsx               # Homepage/Dashboard
-│   │   ├── curriculum/            # Curriculum tracking pages
-│   │   └── classes/               # Class-based routes
-│   │       └── [class]/
-│   │           └── subjects/
-│   │               └── [subject]/
-│   │                   └── chapters/
-│   │                       └── [chapter]/
-│   │                           └── topics/
-│   │                               └── [slug]/
-│   │                                   └── page.tsx
-│   │
-│   ├── components/                 # Reusable React components
-│   │   ├── AppLayout.tsx
-│   │   ├── Sidebar.tsx
-│   │   ├── Loader.tsx
-│   │   └── ui/
-│   │
-│   ├── content/                    # 📚 ALL CURRICULUM CONTENT
-│   │   ├── schema.ts              # TypeScript types
-│   │   └── data/
-│   │       ├── primary-1/
-│   │       ├── primary-4/
-│   │       └── jss-1/             # ✅ NEW: JSS 1 content
-│   │           └── mathematics/
-│   │               ├── number-and-numeration/
-│   │               │   └── topic-1-whole-numbers.ts ✅
-│   │               ├── basic-operations/
-│   │               ├── algebraic-processes/
-│   │               ├── mensuration-and-geometry/
-│   │               └── everyday-statistics/
-│   │
-│   ├── lib/
-│   │   └── content.ts             # Content registry & helpers
-│   │
-│   └── temp/                       # Temporary content generation
-│       ├── README.md
-│       └── JSS-1/...
-│
-├── public/                         # Static assets
-│   ├── images/                    # 🖼️ Add images here
-│   ├── videos/
-│   └── audio/
-│
-├── package.json
-├── tsconfig.json
-└── README.md (this file)
+/src/content/data/
+  ├── [class-name]/
+      ├── [subject]/
+          ├── [chapter]/
+              ├── topic-1-name.ts
+              ├── topic-2-name.ts
+              └── ...
 ```
 
----
-
-## 🚀 Quick Start
-
-### **1. Install Dependencies**
-```bash
-npm install
-```
-
-### **2. Run Development Server**
-```bash
-npm run dev
-```
-
-Visit: `http://localhost:3000`
-
-### **3. Build for Production**
-```bash
-npm run build
-npm start
-```
-
----
-
-## 📖 Content Structure
-
-### **Creating New Content**
-
-Content is stored in TypeScript files for:
-- ✅ Easy editing (just open and edit!)
-- ✅ Version control (Git tracks all changes)
-- ✅ Type safety (TypeScript catches errors)
-- ✅ Fast loading (no database queries)
-- ✅ Easy multimedia (drop images in `/public/`)
-
-### **Example Topic File:**
-
-```typescript
-// src/content/data/jss-1/mathematics/number-and-numeration/topic-1-whole-numbers.ts
-
-import { Topic } from "../../../../schema";
-
-const topic: Topic = {
-  class: "JSS 1",
-  subject: "Mathematics",
-  chapter: "Number and Numeration",
-  slug: "whole-numbers",
-  title: "Whole Numbers",
-  order: 1,
-  completed: false,
-  data: {
-    performanceObjective: "Students will...",
-    contents: [...],
-    teacherActivities: [...],
-    studentActivities: [...],
-    materials: [...],
-    evaluationGuide: [...],
-    pages: [
-      {
-        number: 1,
-        title: "Introduction",
-        blocks: [
-          {
-            type: "intro",
-            content: "Welcome to whole numbers..."
-          },
-          {
-            type: "image",
-            src: "/images/jss-1/math/place-value.png",
-            alt: "Place value chart"
-          },
-          {
-            type: "html",
-            html: "<div>...</div>"
-          }
-        ]
-      }
-    ]
-  }
-};
-
-export default topic;
-```
-
----
-
-## 🎨 Adding Images & Media
-
-### **1. Add Image File**
-```
-public/
-└── images/
-    └── jss-1/
-        └── mathematics/
-            └── place-value-chart.png  ← Drop your image here
-```
-
-### **2. Reference in Content**
-```typescript
-{
-  type: "image",
-  src: "/images/jss-1/mathematics/place-value-chart.png",
-  alt: "Place value chart showing millions and billions",
-  width: 800,
-  height: 400,
-  caption: "Understanding large numbers"
-}
-```
-
-### **3. Done!** 
-Image appears in textbook immediately (hot reload) ⚡
-
----
-
-## ✏️ Editing Content
-
-### **Quick Edit Workflow:**
-
-1. **Open content file:**
-   ```
-   src/content/data/jss-1/mathematics/number-and-numeration/topic-1-whole-numbers.ts
-   ```
-
-2. **Make changes:**
-   - Edit any text
-   - Add/remove sections
-   - Change images
-   - Update exercises
-
-3. **Save file**
-
-4. **See changes instantly** (hot reload!)
-
-5. **Commit to Git:**
-   ```bash
-   git add .
-   git commit -m "Updated Topic 1: Whole Numbers"
-   git push
-   ```
-
----
-
-## 📚 Current Content
-
-### **Available Classes:**
-- ✅ Primary 1 (Mathematics)
-- ✅ Primary 4 (Mathematics)
-- ✅ JSS 1 (Mathematics) - **NEW!**
-
-### **JSS 1 Mathematics Topics:**
-
-**Number and Numeration (6 topics):**
-1. ✅ Whole Numbers - **COMPLETE with 8 pages**
-2. ⏳ Lowest Common Multiples (LCM)
-3. ⏳ Highest Common Factor (HCF)
-4. ⏳ Counting in twos
-5. ⏳ Conversion of Base-ten numerals to Binary numbers
-6. ⏳ Fractions
-
-**Basic Operations (8 topics)** - Coming soon
-**Algebraic Processes (4 topics)** - Coming soon
-**Mensuration and Geometry (4 topics)** - Coming soon
-**Everyday Statistics (2 topics)** - Coming soon
-
----
-
-## 🎯 Content Features
-
-### **Each Topic Includes:**
-
-✅ **Performance Objectives** - Government curriculum aligned
-✅ **Teaching Activities** - For teachers
-✅ **Student Activities** - For learners  
-✅ **Learning Materials** - Required resources
-✅ **Evaluation Guide** - Assessment criteria
-✅ **Complete Pages** - Full textbook content with:
-   - Introductions
-   - Explanations
-   - Examples
-   - Exercises with solutions
-   - Real-life applications (Nigerian context)
-   - Visual aids (tables, charts, images)
-   - Assessment items
-
-### **Rich Content Types:**
-- 📝 Text paragraphs
-- 🎨 HTML formatted content
-- 🖼️ Images (PNG, JPG, SVG)
-- 📊 Tables and charts
-- ✏️ Practice exercises
-- 📋 Assessment items
-- 🎥 Video embeds (coming soon)
-- 🔊 Audio (coming soon)
-
----
-
-## 📄 PDF Generation
-
-Generate printable textbooks:
-
-```typescript
-// Visit any topic page and add ?pdf=true
-http://localhost:3000/classes/JSS%201/subjects/Mathematics/chapters/Number%20and%20Numeration/topics/whole-numbers?pdf=true
-```
-
-Downloads complete PDF with:
-- Professional formatting
-- Page breaks
-- Headers/footers
-- All images included
-- Print-optimized layout
-
----
-
-## 🔄 Version Control
-
-All content is Git-tracked:
-
-```bash
-# See content history
-git log src/content/data/jss-1/
-
-# Revert to previous version
-git checkout HEAD~1 src/content/data/jss-1/mathematics/...
-
-# Compare versions
-git diff HEAD~1 src/content/data/jss-1/...
-```
-
----
-
-## 🎓 Government Curriculum Compliance
-
-All content is aligned with:
-- ✅ Nigerian Educational Research and Development Council (NERDC)
-- ✅ JSS 1-3 Mathematics Curriculum
-- ✅ Primary 1-6 Mathematics Curriculum
-- ✅ Performance objectives
-- ✅ Learning outcomes
-- ✅ Assessment criteria
-- ✅ Age-appropriate content
-- ✅ Cultural relevance (Nigerian examples, Naira, local context)
-
----
-
-## 🛠️ Development Scripts
-
-```bash
-# Development
-npm run dev              # Start dev server (hot reload)
-
-# Production
-npm run build            # Build for production
-npm start                # Start production server
-
-# Linting
-npm run lint             # Check code quality
-```
-
----
-
-## 📝 Adding New Topics
-
-### **Step 1: Create TypeScript File**
-```bash
-src/content/data/jss-1/mathematics/number-and-numeration/topic-2-lcm.ts
-```
-
-### **Step 2: Write Content**
-```typescript
-import { Topic } from "../../../../schema";
-
-const topic: Topic = {
-  class: "JSS 1",
-  subject: "Mathematics",
-  chapter: "Number and Numeration",
-  slug: "lcm",
-  title: "Lowest Common Multiples",
-  order: 2,
-  // ... rest of content
-};
-
-export default topic;
-```
-
-### **Step 3: Register in Content Library**
-```typescript
-// src/lib/content.ts
-import jss1LCM from "@/content/data/jss-1/mathematics/number-and-numeration/topic-2-lcm";
-
-const registry: ClassRegistry = {
-  "JSS 1": {
-    subjects: {
-      "Mathematics": {
-        chapters: {
-          "Number and Numeration": [
-            { ...jss1WholeNumbers, completed: true, chapter: "Number and Numeration" },
-            { ...jss1LCM, completed: false, chapter: "Number and Numeration" }, // Add here
-          ]
-        }
-      }
-    }
-  }
-};
-```
-
-### **Step 4: Done!**
-Topic appears immediately in navigation and curriculum ✨
-
----
-
-## 🎨 Curriculum Tracking
-
-Visit: `http://localhost:3000/curriculum/jss1-math`
-
-Features:
-- ✅ Track completion with checkmarks
-- ✅ View all topics and chapters
-- ✅ See progress percentage
-- ✅ Saved in browser localStorage
-- ✅ Export/import curriculum data
-- ✅ Professional table view with all curriculum details
-
----
-
-## 🌟 Key Advantages of Frontend-Only Approach
-
-1. **⚡ Instant Editing** - Open file, edit, save, see changes
-2. **🖼️ Easy Media** - Drop images in `/public/`, reference them
-3. **🔄 Version Control** - Full Git history of all content
-4. **💾 No Database** - No backend, no hosting costs
-5. **📦 Simple Backup** - Just push to GitHub
-6. **👥 Easy Collaboration** - Share repo, edit content
-7. **🎨 Maximum Flexibility** - Any content type, any layout
-8. **🚀 Fast Loading** - No API calls, everything bundled
-9. **📱 Works Offline** - Static site, no server needed
-10. **💰 Zero Hosting Cost** - Deploy on Vercel/Netlify free tier
-
----
-
-## 📦 Deployment
-
-### **Deploy to Vercel (Recommended):**
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Production deployment
-vercel --prod
-```
-
-### **Deploy to Netlify:**
-
-```bash
-# Build
-npm run build
-
-# Upload `out` folder to Netlify
-```
-
----
-
-## 🤝 Contributing
-
-To add new content:
-
-1. Fork the repository
-2. Create content files in `src/content/data/`
-3. Add images to `public/images/`
-4. Update content registry in `src/lib/content.ts`
-5. Test locally
-6. Submit pull request
-
----
-
-## 📞 Support
-
-For questions or issues:
-- Create an issue on GitHub
-- Check documentation in `/INSTRUCTIONS/`
-- Review curriculum tracking guide
-
----
-
-## 📜 License
-
-This project is for educational purposes aligned with Nigerian curriculum standards.
-
----
-
-## 🎉 Status
-
-**Current Progress:**
-- ✅ Platform architecture complete
-- ✅ JSS 1 Mathematics structure ready
-- ✅ Topic 1 (Whole Numbers) complete with 8 pages
-- ✅ Curriculum tracking system functional
-- ⏳ 23 more topics to create for JSS 1 Math
-
-**Goal:** Create all 24 JSS 1 Mathematics topics with government-approved content!
-
----
-
-**Built with ❤️ for Nigerian Students**
+### 4. **Document Structure (PDF Flow)**
+1. **Subject Page** → Click "📖 View Full Content"
+2. **Page 1**: Contents Page (chapters + topics overview)
+3. **Page 2+**: Chapter 1 title page + content
+4. **Page N+**: Chapter 2 title page + content
+5. **Single continuous document** - no separate navigation needed
+
+### 5. **Component Files**
+- **Contents Page**: `/src/components/SubjectContentsPage.tsx`
+- **Full Content**: `/src/app/classes/[className]/[subject]/view-full/page.tsx` (contains SUBJECT_CONTENTS_MAP)
+- **Subject Schema**: `/src/content/schema.ts`
+
+### 6. **Key Features**
+- ✅ Colored chapter cards (yellow, blue, green, pink rotation)
+- ✅ Topic numbering within chapters
+- ✅ Page count display
+- ✅ Contents page as first page in PDF
+- ✅ Clean print-friendly design
+- ✅ Responsive design
+
+### 7. **Key Concept: Textbook Structure**
+- **NOT separate pages/routes** - it's ONE document like a real textbook
+- Contents page is the **first page** you see when opening the book
+- Then actual chapters follow in sequence 
+- Perfect for PDF download as complete textbook
+
+### 8. **Before Creating New Subject**
+1. Plan complete chapter structure
+2. List all topics for each chapter
+3. Estimate page counts
+4. Update SUBJECT_CONTENTS_MAP in view-full/page.tsx
+5. Create content files
+6. Test PDF generation
+
+### 9. **PDF Configuration**
+- Paper sizes available: A4, A3, A5, Letter, Textbook formats
+- Default: A4 with 15mm margins
+- Textbook: 6×9 inches optimized for publishing
+- Configure in `/src/lib/pdf-config.ts`
+
+## Quick Guide: Adding New Subject/Book (Chapters, Topics, TOC)
+
+1. Define chapters + topics
+   - Open `src/app/classes/[className]/[subject]/view-full/page.tsx`
+   - Update `SUBJECT_CONTENTS_MAP[className][subject]` with an array of chapters:
+     - `chapterNumber`: 1, 2, 3, ...
+     - `title`: chapter title
+     - `topics`: string[] (topic titles in order)
+     - `pages`: string (estimate)
+
+2. Create topic content files
+   - Path: `src/content/data/[class]/[subject]/[chapter]/...`
+   - Each topic file must export a `Topic` that matches `src/content/schema.ts`.
+
+3. Contents table behavior (global)
+   - Renders as PAGE 1 in full book view and PDF.
+   - Shows up to 4 topics per chapter card; the rest are summarized as `+N more topic(s)`.
+   - Cards are centered; PDF uses 2-column layout and prevents cards from splitting across pages.
+   - Topic pill text: compact on web; wraps cleanly in PDF.
+
+4. Chapter title pages (global)
+   - Web: responsive height (not forced to full screen).
+   - PDF: full-page title per chapter (`print:min-h-screen`).
+
+5. Regenerate/preview
+   - Visit `.../view-full` for the subject to preview.
+   - Use the download button to export PDF; heading + table of contents start on the same page by design.
+
+## Visuals (Images & Icons)
+
+- Always add visuals where helpful (diagrams, fraction bars, number lines, Venns).
+- Place assets under `public/images/...` or `public/icons/...`.
+- Use the `image` block in topic pages:
+  - `{ type: 'image', src: '/images/path.png', alt: 'desc', caption: 'caption', width: 720, style: 'inline' }`
+- Web shows compact images; PDF renders full width by default. Ensure alt/captions are meaningful.
+
+### Asset Structure for Generated SVG/PNG
+- `public/images/svg/{class}/{subject}/{chapter-slug}/topic-{n}/...`
+- Example: `public/images/svg/jss-1/mathematics/number-and-numeration/topic-2/venn-multiples.svg`
+- Reference in content with `/images/svg/...` paths
+
+### SVG Creation Guidelines (keep editing minimal)
+1. Titles centered above illustrations (use `text-anchor="middle"`).
+2. Caption centered under diagram; concise and descriptive.
+3. Use high-contrast colors and readable font sizes (≥16px for labels).
+4. Keep canvas white; avoid drop shadows in SVG for clean print.
+5. Prefer vectors (SVG) for math diagrams; set widths in the `image` block.
+
+## Curriculum Tracking
+
+- Open `src/app/curriculum/` to view progress overview.
+- After finishing a topic/chapter/subject, update the curriculum status manually.
+- Optional: the AI should prompt or remind you to mark progress in the curriculum.

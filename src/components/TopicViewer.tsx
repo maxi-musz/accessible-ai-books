@@ -17,9 +17,9 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
         return (
           <div
             key={blockIndex}
-            className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 p-6 rounded-r-lg"
+            className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 print:border-l-8 border-blue-600 p-4 print:p-10 rounded-r-lg print:rounded-r-xl mb-4 print:mb-12"
           >
-            <p className="text-lg leading-relaxed">{block.content}</p>
+            <p className="text-base print:text-xl leading-relaxed text-justify">{block.content}</p>
           </div>
         );
 
@@ -27,7 +27,7 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
         return (
           <h2
             key={blockIndex}
-            className="text-2xl font-bold text-gray-900 mt-8 mb-4"
+            className="text-xl print:text-3xl font-bold text-gray-900 mt-6 print:mt-16 mb-4 print:mb-8"
           >
             {block.content}
           </h2>
@@ -45,7 +45,7 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
 
       case 'paragraph':
         return (
-          <p key={blockIndex} className="text-lg leading-relaxed mb-4">
+          <p key={blockIndex} className="text-base print:text-xl leading-relaxed mb-4 print:mb-8 text-justify">
             {block.content}
           </p>
         );
@@ -156,21 +156,21 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       {/* All Pages Content */}
-      <div className="space-y-8">
+      <div className="space-y-8 print:space-y-16">
         {topic.data.pages.map((page, pageIndex) => (
-          <div key={pageIndex} className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-gray-200">
+          <div 
+            key={pageIndex} 
+            className={`bg-white rounded-2xl shadow-lg print:shadow-2xl p-6 print:p-12 md:print:p-16 border-2 border-gray-200 print:min-h-screen print:flex print:flex-col ${pageIndex > 0 ? 'print:break-before-page' : ''}`}
+          >
             {/* Page Title */}
-            <div className="mb-8 pb-6 border-b-2 border-gray-200">
-              <div className="text-sm text-blue-600 font-medium mb-2">
-                Page {page.number}
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <div className="mb-6 print:mb-12 pb-4 print:pb-8 border-b-2 border-gray-200">
+              <h2 className="text-2xl print:text-4xl md:print:text-5xl font-bold text-gray-900 leading-tight">
                 {page.title}
               </h2>
             </div>
 
             {/* Page Blocks */}
-            <div className="space-y-6 text-gray-800 leading-relaxed">
+            <div className="print:flex-1 space-y-4 print:space-y-8 text-gray-800 leading-relaxed text-base print:text-lg">
               {page.blocks.map((block, blockIndex) => renderBlock(block, blockIndex))}
             </div>
           </div>

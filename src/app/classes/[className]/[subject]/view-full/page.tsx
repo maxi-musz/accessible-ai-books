@@ -3,16 +3,20 @@ import { listClasses, listSubjects, listChapters, getAllTopicsInChapter } from '
 import { notFound } from 'next/navigation';
 import TopicViewer from '@/components/TopicViewer';
 import DownloadPdfButton from '@/components/DownloadPdfButton';
+import SubjectContentsPage from '@/components/SubjectContentsPage';
 
 interface PageProps {
   params: Promise<{
     className: string;
     subject: string;
   }>;
+  searchParams: Promise<{ pdf?: string }>;
 }
 
-export default async function ViewFullSubjectPage({ params }: PageProps) {
+export default async function ViewFullSubjectPage({ params, searchParams }: PageProps) {
   const { className: rawClassName, subject: rawSubject } = await params;
+  const { pdf } = await searchParams;
+  const isPdfMode = pdf === 'true';
   const className = decodeURIComponent(rawClassName);
   const subject = decodeURIComponent(rawSubject);
   
@@ -25,10 +29,107 @@ export default async function ViewFullSubjectPage({ params }: PageProps) {
 
   const chapters = listChapters(className, subject);
 
+  // Subject contents data - matches what we had in the separate contents page
+  const SUBJECT_CONTENTS_MAP: Record<string, Record<string, any[]>> = {
+    'Primary 1': {
+      'Mathematics': [
+        {
+          chapterNumber: 1,
+          title: 'Basics of Geometry',
+          topics: [
+            'Points, Lines and Planes',
+            'Angles: Point, Obtuse & Reflex',
+            'Construction of Triangles',
+            'Logic and Reasoning',
+            'Geometric Figures',
+            'Geometry Problem'
+          ],
+          pages: '15'
+        },
+        {
+          chapterNumber: 2,
+          title: 'Angles and Congruence', 
+          topics: [
+            'Triangle Congruence',
+            'Angles in Triangles',
+            'Polygon Angles',
+            'Angles and Sides',
+            'Side-Angle-Side Congruence',
+            'Angle-Side-Angle Congruence'
+          ],
+          pages: '18'
+        }
+      ]
+    },
+    'Primary 4': {
+      'Mathematics': [
+        {
+          chapterNumber: 1,
+          title: 'Number and Numeration',
+          topics: [
+            'Whole Numbers 1-1000',
+            'Place Value Understanding', 
+            'Number Patterns',
+            'Counting in Groups',
+            'Number Comparison',
+            'Basic Fractions'
+          ],
+          pages: '20'
+        },
+        {
+          chapterNumber: 2,
+          title: 'Basic Operations',
+          topics: [
+            'Addition of Large Numbers',
+            'Subtraction with Regrouping',
+            'Multiplication Tables',
+            'Division with Remainders',
+            'Word Problems',
+            'Mental Mathematics'
+          ],
+          pages: '25'
+        }
+      ]
+    },
+    'JSS 1': {
+      'Mathematics': [
+        {
+          chapterNumber: 1,
+          title: 'Number and Numeration',
+          topics: [
+            'Whole Numbers',
+            'LCM and HCF',
+            'Counting in Twos',
+            'Binary Conversion',
+            'Fractions',
+            'Number Properties'
+          ],
+          pages: '22'
+        },
+        {
+          chapterNumber: 2,
+          title: 'Algebraic Processes',
+          topics: [
+            'Introduction to Algebra',
+            'Simple Equations',
+            'Variables and Constants',
+            'Algebraic Expressions',
+            'Substitution',
+            'Basic Word Problems'
+          ],
+          pages: '18'
+        }
+      ]
+    }
+  };
+
+  const contentChapters = SUBJECT_CONTENTS_MAP[className]?.[subject] || [];
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 shadow-lg sticky top-0 z-10">
+      {!isPdfMode && (
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 shadow-lg sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-3 mb-3 text-sm">
             <Link href="/" className="hover:underline">Home</Link>
@@ -65,9 +166,19 @@ export default async function ViewFullSubjectPage({ params }: PageProps) {
           </div>
         </div>
       </div>
+      )}
 
       {/* Full Subject Content */}
       <div className="flex-1">
+        {/* TABLE OF CONTENTS - First Page */}
+        <div className="print:break-after-page">
+          <SubjectContentsPage 
+            className={className}
+            subject={subject}
+            chapters={contentChapters}
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto px-4 py-8">
           {chapters.map((chapter, chapterIndex) => {
             const topics = getAllTopicsInChapter(className, subject, chapter)
@@ -75,8 +186,8 @@ export default async function ViewFullSubjectPage({ params }: PageProps) {
 
             return (
               <div key={chapter}>
-                {/* Chapter Title Page - Full Page Design */}
-                <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 rounded-3xl shadow-2xl mb-12 print:break-after-page">
+                {/* Chapter Title Page - Full Page Design (responsive min height) */}
+                <div className="min-h-[70vh] print:min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 rounded-3xl shadow-2xl mb-12 print:break-after-page">
                   <div className="text-center text-white px-8 py-16">
                     {/* Chapter Number */}
                     <div className="mb-8">
@@ -129,35 +240,35 @@ export default async function ViewFullSubjectPage({ params }: PageProps) {
                   </div>
                 </div>
 
-                {/* Chapter Topics - Each on fresh page */}
+                {/* Chapter Topics - Each on fresh page with better spacing */}
                 {topics.map((topic, topicIndex) => (
-                  <div key={topic.slug} className="mb-12 print:break-before-page">
-                    {/* Topic Title Page */}
-                    <div className="bg-white rounded-2xl shadow-xl p-12 mb-8 border-l-8 border-blue-600">
-                      <div className="flex items-start justify-between mb-6">
-                        <div className="flex-1">
-                          <div className="text-sm font-semibold text-blue-600 mb-2 uppercase tracking-wider">
-                            Topic {topic.order || topicIndex + 1}
-                          </div>
-                          <h3 className="text-4xl font-bold text-gray-900 mb-4">{topic.title}</h3>
-                          {topic.data.performanceObjective && (
-                            <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg mt-4">
-                              <p className="text-sm font-semibold text-blue-900 mb-1">Learning Objective</p>
-                              <p className="text-gray-700">{topic.data.performanceObjective}</p>
-                            </div>
-                          )}
+                  <div key={topic.slug} className="mb-16 print:break-before-page">
+                    {/* Topic Title Page - Full page height */}
+                    <div className="min-h-screen bg-white rounded-2xl shadow-xl p-16 mb-16 border-l-8 border-blue-600 flex flex-col justify-center print:min-h-screen">
+                      <div className="text-center mb-12">
+                        <div className="text-lg font-semibold text-blue-600 mb-4 uppercase tracking-wider">
+                          Topic {topic.order || topicIndex + 1}
                         </div>
-                        <div className="ml-6 text-right">
-                          <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl px-6 py-4 border-2 border-blue-200">
-                            <p className="text-sm text-gray-600">Pages</p>
-                            <p className="text-3xl font-bold text-blue-600">{topic.data.pages.length}</p>
+                        <h3 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">{topic.title}</h3>
+                        
+                        {topic.data.performanceObjective && (
+                          <div className="bg-blue-50 border-2 border-blue-200 p-8 rounded-xl mt-8 max-w-4xl mx-auto">
+                            <p className="text-lg font-semibold text-blue-900 mb-3">Learning Objective</p>
+                            <p className="text-xl text-gray-700 leading-relaxed">{topic.data.performanceObjective}</p>
+                          </div>
+                        )}
+                        
+                        <div className="mt-12">
+                          <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-12 py-8 border-2 border-blue-200 inline-block">
+                            <p className="text-lg text-gray-600 mb-2">Content Pages</p>
+                            <p className="text-5xl font-bold text-blue-600">{topic.data.pages.length}</p>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Topic Content */}
-                    <div className="bg-white rounded-2xl shadow-lg border-2 border-gray-200 p-8">
+                    {/* Topic Content - Each page gets more space */}
+                    <div className="print:break-before-page">
                       <TopicViewer topic={topic} showTopicInfo={false} />
                     </div>
                   </div>
@@ -179,4 +290,3 @@ export default async function ViewFullSubjectPage({ params }: PageProps) {
     </div>
   );
 }
-

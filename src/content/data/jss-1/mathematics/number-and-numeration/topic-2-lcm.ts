@@ -47,6 +47,7 @@ const topic: Topic = {
         title: "Understanding Multiples and LCM",
         blocks: [
           { type: "intro", content: "Welcome to Lowest Common Multiples! In this topic, we'll learn how to find the LCM of numbers and use it to solve real-world problems." },
+          { type: "image", src: "/images/svg/jss-1/mathematics/number-and-numeration/topic-2/venn-multiples.svg", alt: "Venn diagram showing common multiples", caption: "Common multiples visualized with a Venn diagram", style: "inline", width: 720 },
           { type: "heading", content: "What is a Multiple?" },
           { type: "paragraph", content: "A multiple of a number is the product of that number and any whole number. For example, multiples of 3 are: 3, 6, 9, 12, 15, 18, 21..." },
           { type: "heading", content: "What is LCM?" },

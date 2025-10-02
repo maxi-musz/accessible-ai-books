@@ -266,6 +266,90 @@ export async function GET(req: NextRequest) {
             border-radius: 0.5rem !important;
           }
           
+          /* Preserve Grid and Flexbox layouts */
+          .grid {
+            display: grid !important;
+          }
+          
+          .grid-cols-2 {
+            grid-template-columns: 1fr 1fr !important;
+          }
+          
+          .md\\:grid-cols-2 {
+            grid-template-columns: 1fr 1fr !important;
+          }
+          
+          .gap-8 {
+            gap: 2rem !important;
+          }
+          
+          .gap-4 {
+            gap: 1rem !important;
+          }
+          
+          .flex {
+            display: flex !important;
+          }
+          
+          .flex-row {
+            flex-direction: row !important;
+          }
+          
+          .flex-col {
+            flex-direction: column !important;
+          }
+          
+          .items-center {
+            align-items: center !important;
+          }
+          
+          .justify-between {
+            justify-content: space-between !important;
+          }
+          
+          .space-y-2 > * + * {
+            margin-top: 0.5rem !important;
+          }
+          
+          .space-y-3 > * + * {
+            margin-top: 0.75rem !important;
+          }
+          
+          .space-y-6 > * + * {
+            margin-top: 1.5rem !important;
+          }
+          
+          /* Prevent content boxes from stretching */
+          .bg-blue-50,
+          .bg-green-50,
+          .bg-yellow-50,
+          .bg-purple-50 {
+            width: auto !important;
+            min-height: auto !important;
+            flex: 1 !important;
+          }
+          
+          /* Ensure padding and margins are preserved */
+          .p-6 {
+            padding: 1.5rem !important;
+          }
+          
+          .p-8 {
+            padding: 2rem !important;
+          }
+          
+          .mb-4 {
+            margin-bottom: 1rem !important;
+          }
+          
+          .mt-8 {
+            margin-top: 2rem !important;
+          }
+          
+          .rounded-lg {
+            border-radius: 0.5rem !important;
+          }
+          
           /* Hide interactive elements */
           .sidebar,
           button,

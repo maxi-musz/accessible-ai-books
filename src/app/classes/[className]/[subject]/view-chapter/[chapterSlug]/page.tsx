@@ -16,16 +16,25 @@ export default function ViewChapterPage({ params }: PageProps) {
   const className = decodeURIComponent(params.className);
   const subject = decodeURIComponent(params.subject);
   const chapterSlug = decodeURIComponent(params.chapterSlug);
-  
+
   const classes = listClasses();
   const subjects = listSubjects(className);
   const chapters = listChapters(className, subject);
 
-  if (!classes.includes(className) || !subjects.includes(subject) || !chapters.includes(chapterSlug)) {
+  if (!classes.includes(className) || !subjects.includes(subject)) {
     notFound();
   }
 
-  const topics = getAllTopicsInChapter(className, subject, chapterSlug)
+  // Find the chapter by matching the slug (URL-friendly version)
+  const chapter = chapters.find(ch => 
+    ch.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === chapterSlug
+  );
+
+  if (!chapter) {
+    notFound();
+  }
+
+  const topics = getAllTopicsInChapter(className, subject, chapter)
     .sort((a, b) => (a.order || 0) - (b.order || 0));
 
   return (
@@ -42,11 +51,11 @@ export default function ViewChapterPage({ params }: PageProps) {
             <span>›</span>
             <Link href={`/classes/${encodeURIComponent(className)}/${encodeURIComponent(subject)}`} className="hover:underline">{subject}</Link>
             <span>›</span>
-            <span className="text-blue-200">{chapterSlug} (Full Chapter)</span>
+            <span className="text-blue-200">{chapter}</span>
           </div>
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold">{chapterSlug}</h1>
+              <h1 className="text-3xl font-bold">{chapter}</h1>
               <p className="text-blue-100 mt-1">
                 {className} • {subject} • {topics.length} topic{topics.length !== 1 ? 's' : ''}
               </p>
@@ -56,7 +65,7 @@ export default function ViewChapterPage({ params }: PageProps) {
                 className={className} 
                 subject={subject} 
                 slug={chapterSlug}
-                chapter={chapterSlug}
+                chapter={chapter}
                 type="chapter"
               />
               <Link
@@ -76,17 +85,19 @@ export default function ViewChapterPage({ params }: PageProps) {
           {/* Chapter Title Page - Full Page Design */}
           <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 rounded-3xl shadow-2xl mb-12 print:break-after-page">
             <div className="text-center text-white px-8 py-16">
-              {/* Chapter Label */}
+              {/* Chapter Number */}
               <div className="mb-8">
                 <div className="inline-block border-4 border-white/30 rounded-full px-8 py-4">
                   <p className="text-xl font-semibold tracking-wider uppercase opacity-90">Chapter</p>
-                  <p className="text-8xl font-bold mt-2">•</p>
+                  <p className="text-8xl font-bold mt-2">
+                    {chapters.indexOf(chapter) + 1}
+                  </p>
                 </div>
               </div>
 
               {/* Chapter Title */}
               <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-                {chapterSlug}
+                {chapter}
               </h2>
 
               {/* Chapter Info */}
@@ -124,6 +135,7 @@ export default function ViewChapterPage({ params }: PageProps) {
               <div className="mt-8 text-white/70 text-sm">
                 <p>{className} • {subject}</p>
               </div>
+
             </div>
           </div>
 
@@ -174,4 +186,3 @@ export default function ViewChapterPage({ params }: PageProps) {
     </div>
   );
 }
-

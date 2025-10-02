@@ -57,6 +57,7 @@ const topic: Topic = {
         title: "Introduction to Fractions",
         blocks: [
           { type: "intro", content: "Welcome to Fractions! In this topic, we'll learn how to represent parts of a whole and use fractions in everyday life." },
+          { type: "image", src: "/images/svg/jss-1/mathematics/number-and-numeration/topic-6/fraction-bar-1-2.svg", alt: "Fraction bar showing one-half (1/2)", caption: "Fraction bar model for 1/2", style: "inline", width: 700 },
           { type: "heading", content: "What is a Fraction?" },
           { type: "paragraph", content: "A fraction represents a part of a whole. It has two parts: the numerator (top number) tells us how many parts we have, and the denominator (bottom number) tells us how many equal parts the whole is divided into." },
           { type: "example", title: "Example", content: "If you cut a pizza into 8 equal slices and eat 3 slices:\n\nNumerator = 3 (slices you ate)\nDenominator = 8 (total slices)\nFraction = 3/8\n\nWe say 'three-eighths' of the pizza was eaten." },

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <g transform="translate(150,80)">
+    <circle cx="220" cy="170" r="140" fill="#60a5fa" fill-opacity="0.25" stroke="#3b82f6" stroke-width="4"/>
+    <circle cx="340" cy="170" r="140" fill="#34d399" fill-opacity="0.25" stroke="#10b981" stroke-width="4"/>
+    <!-- Titles above circles, centered -->
+    <text x="180" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#1f2937">Multiples of 4</text>
+    <text x="380" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#1f2937">Multiples of 6</text>
+    <g font-family="Inter, sans-serif" font-size="24" fill="#1f2937" font-weight="600">
+      <text x="180" y="150">8</text>
+      <text x="150" y="190">16</text>
+      <text x="210" y="210">20</text>
+      <text x="270" y="170">12</text>
+      <text x="305" y="200">24</text>
+      <text x="360" y="150">18</text>
+      <text x="380" y="210">30</text>
+    </g>
+    <!-- Caption centered under overlap -->
+    <text x="280" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#6b7280">Common multiples in the overlap</text>
+  </g>
+</svg>
+

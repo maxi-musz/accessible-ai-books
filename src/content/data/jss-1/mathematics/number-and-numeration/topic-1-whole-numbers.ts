@@ -75,7 +75,78 @@ const topic: Topic = {
           },
           {
             type: "html",
-            html: `<div class='overflow-x-auto'><table class='w-full border-collapse border-2 border-gray-400 my-4'><thead><tr class='bg-blue-600 text-white'><th class='border border-gray-400 p-2'>Trillions</th><th class='border border-gray-400 p-2'>Hundred Billions</th><th class='border border-gray-400 p-2'>Ten Billions</th><th class='border border-gray-400 p-2'>Billions</th><th class='border border-gray-400 p-2'>Hundred Millions</th><th class='border border-gray-400 p-2'>Ten Millions</th><th class='border border-gray-400 p-2'>Millions</th><th class='border border-gray-400 p-2'>Hundred Thousands</th><th class='border border-gray-400 p-2'>Ten Thousands</th><th class='border border-gray-400 p-2'>Thousands</th><th class='border border-gray-400 p-2'>Hundreds</th><th class='border border-gray-400 p-2'>Tens</th><th class='border border-gray-400 p-2'>Ones</th></tr></thead><tbody><tr><td class='border border-gray-400 p-2 text-center'>1,000,000,000,000</td><td class='border border-gray-400 p-2 text-center'>100,000,000,000</td><td class='border border-gray-400 p-2 text-center'>10,000,000,000</td><td class='border border-gray-400 p-2 text-center'>1,000,000,000</td><td class='border border-gray-400 p-2 text-center'>100,000,000</td><td class='border border-gray-400 p-2 text-center'>10,000,000</td><td class='border border-gray-400 p-2 text-center'>1,000,000</td><td class='border border-gray-400 p-2 text-center'>100,000</td><td class='border border-gray-400 p-2 text-center'>10,000</td><td class='border border-gray-400 p-2 text-center'>1,000</td><td class='border border-gray-400 p-2 text-center'>100</td><td class='border border-gray-400 p-2 text-center'>10</td><td class='border border-gray-400 p-2 text-center'>1</td></tr></tbody></table></div>`,
+            html: `
+            <div class="place-value-table">
+              <style>
+                .place-value-table table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  margin: 20px 0;
+                  font-size: 11px;
+                }
+                .place-value-table th, .place-value-table td {
+                  border: 1px solid #666;
+                  padding: 6px 2px;
+                  text-align: center;
+                  word-break: break-word;
+                }
+                .place-value-table th {
+                  background-color: #2563eb;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 10px;
+                  line-height: 1.2;
+                }
+                @media print {
+                  .place-value-table table {
+                    font-size: 9px;
+                  }
+                  .place-value-table th {
+                    font-size: 8px;
+                  }
+                  .place-value-table td, .place-value-table th {
+                    padding: 4px 1px;
+                  }
+                }
+              </style>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Trillions</th>
+                    <th>Hundred<br>Billions</th>
+                    <th>Ten<br>Billions</th>
+                    <th>Billions</th>
+                    <th>Hundred<br>Millions</th>
+                    <th>Ten<br>Millions</th>
+                    <th>Millions</th>
+                    <th>Hundred<br>Thousands</th>
+                    <th>Ten<br>Thousands</th>
+                    <th>Thousands</th>
+                    <th>Hundreds</th>
+                    <th>Tens</th>
+                    <th>Ones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1,000,000,000,000</td>
+                    <td>100,000,000,000</td>
+                    <td>10,000,000,000</td>
+                    <td>1,000,000,000</td>
+                    <td>100,000,000</td>
+                    <td>10,000,000</td>
+                    <td>1,000,000</td>
+                    <td>100,000</td>
+                    <td>10,000</td>
+                    <td>1,000</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            `,
           },
         ],
       },

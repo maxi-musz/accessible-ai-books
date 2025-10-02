@@ -1,5 +1,5 @@
 export type TextBlock = {
-  type: "intro" | "paragraph" | "heading";
+  type: "intro" | "paragraph" | "heading" | "subheading";
   content: string;
 };
 
@@ -27,12 +27,53 @@ export type AssessmentItemBlock = {
   content?: string; // plain text fallback
 };
 
+// New: Image block for diagrams/illustrations
+export type ImageBlock = {
+  type: "image";
+  src: string; // URL or path under /public
+  alt?: string;
+  caption?: string;
+  width?: number; // px
+  height?: number; // px
+  style?: "inline" | "full"; // rendering hint
+};
+
+// Examples / Notes / Warnings / Lists
+export type ExampleBlock = {
+  type: "example";
+  title?: string;
+  content: string;
+};
+
+export type NoteBlock = {
+  type: "note";
+  title?: string;
+  content: string;
+};
+
+export type WarningBlock = {
+  type: "warning";
+  title?: string;
+  content: string;
+};
+
+export type ListBlock = {
+  type: "list";
+  title?: string;
+  items: string[];
+};
+
 export type PageBlock =
   | TextBlock
   | ObjectsGroupBlock
   | MatchNumbersBlock
   | CountingLinesBlock
   | AssessmentItemBlock
+  | ExampleBlock
+  | NoteBlock
+  | WarningBlock
+  | ListBlock
+  | ImageBlock
   | { type: "html"; html: string };
 
 export interface TopicMeta {
