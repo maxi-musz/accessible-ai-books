@@ -74,6 +74,14 @@ const topic: Topic = {
               "Place value is the value of where a digit is in a number. Each position in a number has a different value. Let's look at the place value chart:",
           },
           {
+            type: "image",
+            src: "/images/svg/jss-1/mathematics/number-and-numeration/topic-1/place-value-chart.svg",
+            alt: "Place value chart from millions to ones",
+            caption: "Place value chart (millions → ones)",
+            style: "inline",
+            width: 960
+          },
+          {
             type: "html",
             html: `
             <div class="place-value-table">
@@ -157,6 +165,14 @@ const topic: Topic = {
           {
             type: "heading",
             content: "Understanding Millions",
+          },
+          {
+            type: "image",
+            src: "/images/svg/jss-1/mathematics/number-and-numeration/topic-1/number-line-0-20.svg",
+            alt: "Number line from 0 to 20",
+            caption: "Number line (0 to 20) for counting practice",
+            style: "inline",
+            width: 960
           },
           {
             type: "paragraph",

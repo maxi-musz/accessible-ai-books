@@ -129,23 +129,23 @@ export default async function ViewFullSubjectPage({ params, searchParams }: Page
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       {!isPdfMode && (
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 shadow-lg sticky top-0 z-10">
+      <div className="bg-white text-gray-900 py-4 border-b sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-3 mb-3 text-sm">
-            <Link href="/" className="hover:underline">Home</Link>
+            <Link href="/" className="text-gray-600 hover:underline">Home</Link>
             <span>›</span>
-            <Link href="/classes" className="hover:underline">Classes</Link>
+            <Link href="/classes" className="text-gray-600 hover:underline">Classes</Link>
             <span>›</span>
-            <Link href={`/classes/${encodeURIComponent(className)}`} className="hover:underline">{className}</Link>
+            <Link href={`/classes/${encodeURIComponent(className)}`} className="text-gray-600 hover:underline">{className}</Link>
             <span>›</span>
-            <Link href={`/classes/${encodeURIComponent(className)}/${encodeURIComponent(subject)}`} className="hover:underline">{subject}</Link>
+            <Link href={`/classes/${encodeURIComponent(className)}/${encodeURIComponent(subject)}`} className="text-gray-600 hover:underline">{subject}</Link>
             <span>›</span>
-            <span className="text-blue-200">Full Content</span>
+            <span className="text-gray-500">Full Content</span>
           </div>
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold">{subject} - Complete Content</h1>
-              <p className="text-blue-100 mt-1">
+              <p className="text-gray-500 mt-1">
                 {className} • {chapters.length} chapter{chapters.length !== 1 ? 's' : ''}
               </p>
             </div>

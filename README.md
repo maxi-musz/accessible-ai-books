@@ -116,6 +116,7 @@
 3. Use high-contrast colors and readable font sizes (≥16px for labels).
 4. Keep canvas white; avoid drop shadows in SVG for clean print.
 5. Prefer vectors (SVG) for math diagrams; set widths in the `image` block.
+ 6. PDF-first: ensure visuals scale nicely to page width; test export after adding.
 
 ## Curriculum Tracking
 

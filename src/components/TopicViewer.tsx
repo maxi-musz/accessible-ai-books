@@ -121,18 +121,22 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
 
       case 'image':
         return (
-          <div key={blockIndex} className="my-8">
-            <div className="relative w-full rounded-xl overflow-hidden border-2 border-gray-200">
-              <Image
-                src={block.src || ''}
-                alt={block.alt || ''}
-                width={block.width || 800}
-                height={block.height || 600}
-                className="w-full h-auto"
-              />
-            </div>
+          <div key={blockIndex} className="my-6 print:my-6">
+            {/* Use plain img to avoid Next/Image optimization overhead during PDF generation */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={block.src || ''}
+              alt={block.alt || ''}
+              loading="eager"
+              decoding="sync"
+              style={{
+                width: '100%',
+                height: 'auto',
+                maxWidth: block.width ? `${block.width}px` : '100%'
+              }}
+            />
             {block.caption && (
-              <p className="text-sm text-gray-600 text-center mt-3 italic">
+              <p className="text-sm text-gray-600 text-center mt-2 italic">
                 {block.caption}
               </p>
             )}
@@ -156,21 +160,21 @@ export default function TopicViewer({ topic, showTopicInfo = true }: TopicViewer
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       {/* All Pages Content */}
-      <div className="space-y-8 print:space-y-16">
+      <div className="space-y-8 print:space-y-8">
         {topic.data.pages.map((page, pageIndex) => (
           <div 
             key={pageIndex} 
-            className={`bg-white rounded-2xl shadow-lg print:shadow-2xl p-6 print:p-12 md:print:p-16 border-2 border-gray-200 print:min-h-screen print:flex print:flex-col ${pageIndex > 0 ? 'print:break-before-page' : ''}`}
+            className={`bg-white rounded-2xl shadow-lg print:shadow-2xl p-6 print:p-8 border-2 border-gray-200 ${pageIndex > 0 ? 'print:break-before-page' : ''}`}
           >
             {/* Page Title */}
-            <div className="mb-6 print:mb-12 pb-4 print:pb-8 border-b-2 border-gray-200">
+            <div className="mb-6 print:mb-6 pb-4 print:pb-4 border-b-2 border-gray-200">
               <h2 className="text-2xl print:text-4xl md:print:text-5xl font-bold text-gray-900 leading-tight">
                 {page.title}
               </h2>
             </div>
 
             {/* Page Blocks */}
-            <div className="print:flex-1 space-y-4 print:space-y-8 text-gray-800 leading-relaxed text-base print:text-lg">
+            <div className="space-y-4 print:space-y-6 text-gray-800 leading-relaxed text-base print:text-lg">
               {page.blocks.map((block, blockIndex) => renderBlock(block, blockIndex))}
             </div>
           </div>

@@ -31,19 +31,19 @@ export default function SubjectContentsPage({
           {/* Decorative Elements */}
           <div className="flex justify-center items-center gap-6 print:gap-12 mb-8 print:mb-16">
             <div className="w-12 h-12 print:w-20 print:h-20 rounded-full bg-gray-100 flex items-center justify-center">
-              <span className="text-xl print:text-3xl">📚</span>
+              {/* <span className="text-xl print:text-3xl">📚</span> */}
             </div>
-            <div className="text-2xl print:text-4xl font-bold text-gray-800">
+            {/* <div className="text-2xl print:text-4xl font-bold text-gray-800">
               CONTENTS
-            </div>
+            </div> */}
             <div className="w-12 h-12 print:w-20 print:h-20 rounded-full bg-gray-100 flex items-center justify-center">
-              <span className="text-xl print:text-3xl">✨</span>
+              {/* <span className="text-xl print:text-3xl">✨</span> */}
             </div>
           </div>
 
           {/* Summary */}
           <div className="text-sm print:text-lg text-gray-600">
-            Total Chapters: {chapters.length}
+            {/* Total Chapters: {chapters.length} */}
           </div>
         </div>
       </div>
@@ -166,7 +166,7 @@ export default function SubjectContentsPage({
               <div className="border-t border-gray-200 print:border-t pt-2 print:pt-3">
                 <div className="text-center">
                   <div className="text-[11px] print:text-xs text-gray-600">
-                    Pages: <span className="font-bold text-xs print:text-sm text-gray-800">{chapter.pages}</span>
+                    {/* Pages: <span className="font-bold text-xs print:text-sm text-gray-800">{chapter.pages}</span> */}
                   </div>
                 </div>
               </div>
