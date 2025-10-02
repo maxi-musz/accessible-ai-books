@@ -1,0 +1,15 @@
+# Temporary AI-Generated Content
+
+This folder is for temporary AI-generated topic content.
+
+## How to Use
+
+1. AI generates content and saves to `generated-topic-content.json`
+2. Open the file and copy the JSON
+3. Paste into Postman
+4. Send PATCH request to `/api/v1/topics/:id/content`
+5. Content gets saved to database
+
+## Files
+- `generated-topic-content.json` - Latest generated content (git ignored)
+- `topic-template.json` - Template structure for reference
