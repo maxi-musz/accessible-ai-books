@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <title>HCF vs LCM Comparison</title>
+  <desc>Side-by-side comparison of HCF and LCM concepts, properties, and applications</desc>
+  <rect width="1000" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="500" y="30" text-anchor="middle" font-size="28" font-weight="bold">HCF vs LCM: Key Differences</text>
+    
+    <!-- HCF Section -->
+    <g transform="translate(50,80)">
+      <rect x="0" y="0" width="400" height="350" fill="#f0f9ff" stroke="#2563eb" stroke-width="3" rx="15"/>
+      <text x="200" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#2563eb">HCF (Highest Common Factor)</text>
+      
+      <!-- Definition -->
+      <text x="20" y="60" font-size="16" font-weight="bold">Definition:</text>
+      <text x="20" y="80" font-size="14">Largest number that divides all given numbers</text>
+      
+      <!-- Properties -->
+      <text x="20" y="110" font-size="16" font-weight="bold">Properties:</text>
+      <text x="20" y="130" font-size="14">• Always ≤ smallest number</text>
+      <text x="20" y="150" font-size="14">• Divides all given numbers</text>
+      <text x="20" y="170" font-size="14">• Found using common factors</text>
+      
+      <!-- Example -->
+      <text x="20" y="200" font-size="16" font-weight="bold">Example:</text>
+      <text x="20" y="220" font-size="14">HCF(12, 18) = 6</text>
+      <text x="20" y="240" font-size="12" fill="#666">Factors of 12: 1,2,3,4,6,12</text>
+      <text x="20" y="255" font-size="12" fill="#666">Factors of 18: 1,2,3,6,9,18</text>
+      <text x="20" y="270" font-size="12" fill="#666">Common: 1,2,3,6 → Largest = 6</text>
+      
+      <!-- Applications -->
+      <text x="20" y="300" font-size="16" font-weight="bold">Applications:</text>
+      <text x="20" y="320" font-size="14">• Simplifying fractions</text>
+      <text x="20" y="335" font-size="14">• Finding common divisors</text>
+    </g>
+    
+    <!-- LCM Section -->
+    <g transform="translate(550,80)">
+      <rect x="0" y="0" width="400" height="350" fill="#f0fdf4" stroke="#059669" stroke-width="3" rx="15"/>
+      <text x="200" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#059669">LCM (Lowest Common Multiple)</text>
+      
+      <!-- Definition -->
+      <text x="20" y="60" font-size="16" font-weight="bold">Definition:</text>
+      <text x="20" y="80" font-size="14">Smallest number that is a multiple of all given numbers</text>
+      
+      <!-- Properties -->
+      <text x="20" y="110" font-size="16" font-weight="bold">Properties:</text>
+      <text x="20" y="130" font-size="14">• Always ≥ largest number</text>
+      <text x="20" y="150" font-size="14">• Multiple of all given numbers</text>
+      <text x="20" y="170" font-size="14">• Found using common multiples</text>
+      
+      <!-- Example -->
+      <text x="20" y="200" font-size="16" font-weight="bold">Example:</text>
+      <text x="20" y="220" font-size="14">LCM(12, 18) = 36</text>
+      <text x="20" y="240" font-size="12" fill="#666">Multiples of 12: 12,24,36,48...</text>
+      <text x="20" y="255" font-size="12" fill="#666">Multiples of 18: 18,36,54,72...</text>
+      <text x="20" y="270" font-size="12" fill="#666">Common: 36,72... → Smallest = 36</text>
+      
+      <!-- Applications -->
+      <text x="20" y="300" font-size="16" font-weight="bold">Applications:</text>
+      <text x="20" y="320" font-size="14">• Finding common multiples</text>
+      <text x="20" y="335" font-size="14">• Scheduling problems</text>
+    </g>
+    
+    <!-- Relationship -->
+    <g transform="translate(200,450)">
+      <rect x="0" y="0" width="600" height="40" fill="#faf5ff" stroke="#7c3aed" stroke-width="2" rx="10"/>
+      <text x="300" y="25" text-anchor="middle" font-size="18" font-weight="bold" fill="#7c3aed">Key Relationship: HCF × LCM = Product of the two numbers</text>
+    </g>
+    
+    <!-- Visual comparison -->
+    <g transform="translate(100,200)">
+      <!-- HCF visual -->
+      <g>
+        <text x="0" y="0" font-size="14" font-weight="bold" fill="#2563eb">HCF Visual:</text>
+        <circle cx="50" cy="20" r="20" fill="#e0f2fe" stroke="#2563eb" stroke-width="2"/>
+        <text x="50" y="27" text-anchor="middle" font-size="12" font-weight="bold">6</text>
+        <text x="80" y="25" font-size="12">Divides both 12 and 18</text>
+      </g>
+      
+      <!-- LCM visual -->
+      <g transform="translate(300,0)">
+        <text x="0" y="0" font-size="14" font-weight="bold" fill="#059669">LCM Visual:</text>
+        <circle cx="50" cy="20" r="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+        <text x="50" y="27" text-anchor="middle" font-size="12" font-weight="bold">36</text>
+        <text x="80" y="25" font-size="12">Multiple of both 12 and 18</text>
+      </g>
+    </g>
+  </g>
+</svg>

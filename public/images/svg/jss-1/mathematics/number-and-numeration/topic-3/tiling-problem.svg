@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Tiling Problem using HCF</title>
+  <desc>Room 12m×18m showing largest square tiles using HCF</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Tiling Problem: 12m × 18m Room</text>
+    
+    <!-- Room outline -->
+    <g transform="translate(100,80)">
+      <rect x="0" y="0" width="240" height="360" fill="#f0f9ff" stroke="#2563eb" stroke-width="3"/>
+      <text x="120" y="20" text-anchor="middle" font-size="16" font-weight="bold">18m</text>
+      <text x="250" y="180" text-anchor="middle" font-size="16" font-weight="bold" transform="rotate(90 250 180)">12m</text>
+      
+      <!-- Tiles -->
+      <g stroke="#059669" stroke-width="1" fill="none">
+        <!-- 6m × 6m tiles -->
+        <rect x="0" y="0" width="120" height="120"/>
+        <rect x="120" y="0" width="120" height="120"/>
+        <rect x="0" y="120" width="120" height="120"/>
+        <rect x="120" y="120" width="120" height="120"/>
+        <rect x="0" y="240" width="120" height="120"/>
+        <rect x="120" y="240" width="120" height="120"/>
+      </g>
+      
+      <text x="60" y="140" text-anchor="middle" font-size="12" font-weight="bold">6m</text>
+      <text x="180" y="140" text-anchor="middle" font-size="12" font-weight="bold">6m</text>
+    </g>
+    
+    <!-- Calculation -->
+    <g transform="translate(400,100)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Solution:</text>
+      <text x="0" y="30" font-size="16">HCF(12, 18) = 6</text>
+      <text x="0" y="60" font-size="14">Largest square tile: 6m × 6m</text>
+      <text x="0" y="90" font-size="14">Tiles along width: 12 ÷ 6 = 2</text>
+      <text x="0" y="120" font-size="14">Tiles along length: 18 ÷ 6 = 3</text>
+      <text x="0" y="150" font-size="14">Total tiles: 2 × 3 = 6</text>
+    </g>
+  </g>
+</svg>

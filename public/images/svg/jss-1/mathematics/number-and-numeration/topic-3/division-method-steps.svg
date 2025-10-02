@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <title>Division Method (Euclidean Algorithm) Steps</title>
+  <desc>Step-by-step demonstration of the division method for finding HCF</desc>
+  <rect width="1000" height="600" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="500" y="30" text-anchor="middle" font-size="28" font-weight="bold">Division Method for HCF(48, 18)</text>
+    
+    <!-- Step 1 -->
+    <g transform="translate(50,80)">
+      <rect x="0" y="0" width="900" height="80" fill="#f0f9ff" stroke="#2563eb" stroke-width="2" rx="10"/>
+      <text x="20" y="25" font-size="18" font-weight="bold" fill="#2563eb">Step 1:</text>
+      <text x="20" y="50" font-size="16">48 ÷ 18 = 2 remainder 12</text>
+      <text x="20" y="70" font-size="14" fill="#666">Divide larger number (48) by smaller number (18)</text>
+    </g>
+    
+    <!-- Step 2 -->
+    <g transform="translate(50,180)">
+      <rect x="0" y="0" width="900" height="80" fill="#f0fdf4" stroke="#059669" stroke-width="2" rx="10"/>
+      <text x="20" y="25" font-size="18" font-weight="bold" fill="#059669">Step 2:</text>
+      <text x="20" y="50" font-size="16">18 ÷ 12 = 1 remainder 6</text>
+      <text x="20" y="70" font-size="14" fill="#666">Now divide the previous divisor (18) by the remainder (12)</text>
+    </g>
+    
+    <!-- Step 3 -->
+    <g transform="translate(50,280)">
+      <rect x="0" y="0" width="900" height="80" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="10"/>
+      <text x="20" y="25" font-size="18" font-weight="bold" fill="#d97706">Step 3:</text>
+      <text x="20" y="50" font-size="16">12 ÷ 6 = 2 remainder 0</text>
+      <text x="20" y="70" font-size="14" fill="#666">Continue until remainder is 0</text>
+    </g>
+    
+    <!-- Result -->
+    <g transform="translate(50,380)">
+      <rect x="0" y="0" width="900" height="80" fill="#faf5ff" stroke="#7c3aed" stroke-width="3" rx="10"/>
+      <text x="20" y="25" font-size="20" font-weight="bold" fill="#7c3aed">Result:</text>
+      <text x="20" y="50" font-size="18">When remainder is 0, the last divisor is the HCF</text>
+      <text x="20" y="70" font-size="24" font-weight="bold" fill="#7c3aed">HCF = 6</text>
+    </g>
+    
+    <!-- Visual representation -->
+    <g transform="translate(100,480)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Visual Flow:</text>
+      <text x="0" y="25" font-size="14">48 → 18 → 12 → 6 (HCF)</text>
+      
+      <!-- Flow arrows -->
+      <g stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)">
+        <line x1="50" y1="35" x2="100" y2="35"/>
+        <line x1="150" y1="35" x2="200" y2="35"/>
+        <line x1="250" y1="35" x2="300" y2="35"/>
+      </g>
+      
+      <!-- Numbers in circles -->
+      <circle cx="50" cy="35" r="15" fill="#e0f2fe" stroke="#2563eb" stroke-width="2"/>
+      <text x="50" y="42" text-anchor="middle" font-size="12" font-weight="bold">48</text>
+      
+      <circle cx="150" cy="35" r="15" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+      <text x="150" y="42" text-anchor="middle" font-size="12" font-weight="bold">18</text>
+      
+      <circle cx="250" cy="35" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="250" y="42" text-anchor="middle" font-size="12" font-weight="bold">12</text>
+      
+      <circle cx="350" cy="35" r="15" fill="#e9d5ff" stroke="#7c3aed" stroke-width="3"/>
+      <text x="350" y="42" text-anchor="middle" font-size="12" font-weight="bold">6</text>
+    </g>
+    
+    <!-- Arrow marker definition -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+      </marker>
+    </defs>
+  </g>
+</svg>

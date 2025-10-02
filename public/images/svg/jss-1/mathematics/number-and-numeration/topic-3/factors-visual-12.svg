@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Factors of 12 Visual Representation</title>
+  <desc>Rectangular arrays showing all factors of 12: 1×12, 2×6, 3×4, 4×3, 6×2, 12×1</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Factors of 12</text>
+    
+    <!-- 1×12 array -->
+    <g transform="translate(50,60)">
+      <text x="0" y="0" font-size="16" font-weight="bold">1 × 12</text>
+      <rect x="0" y="10" width="120" height="10" fill="#2563eb" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- 2×6 array -->
+    <g transform="translate(250,60)">
+      <text x="0" y="0" font-size="16" font-weight="bold">2 × 6</text>
+      <rect x="0" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+      <rect x="20" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+      <rect x="40" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+      <rect x="80" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+      <rect x="100" y="10" width="20" height="60" fill="#059669" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- 3×4 array -->
+    <g transform="translate(450,60)">
+      <text x="0" y="0" font-size="16" font-weight="bold">3 × 4</text>
+      <rect x="0" y="10" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="20" y="10" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="40" y="10" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="10" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="0" y="30" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="20" y="30" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="40" y="30" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="30" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="0" y="50" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="20" y="50" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="40" y="50" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="50" width="20" height="20" fill="#7c3aed" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- 4×3 array -->
+    <g transform="translate(650,60)">
+      <text x="0" y="0" font-size="16" font-weight="bold">4 × 3</text>
+      <rect x="0" y="10" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="15" y="10" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="10" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="45" y="10" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="0" y="25" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="15" y="25" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="25" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="45" y="25" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="0" y="40" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="15" y="40" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="40" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+      <rect x="45" y="40" width="15" height="15" fill="#dc2626" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- 6×2 array -->
+    <g transform="translate(50,150)">
+      <text x="0" y="0" font-size="16" font-weight="bold">6 × 2</text>
+      <rect x="0" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="15" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="45" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="75" y="10" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="0" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="15" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="45" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+      <rect x="75" y="25" width="15" height="15" fill="#ea580c" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- 12×1 array -->
+    <g transform="translate(250,150)">
+      <text x="0" y="0" font-size="16" font-weight="bold">12 × 1</text>
+      <rect x="0" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="10" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="20" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="30" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="40" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="50" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="60" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="70" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="80" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="90" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="100" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+      <rect x="110" y="10" width="10" height="10" fill="#0891b2" stroke="#111" stroke-width="1"/>
+    </g>
+    
+    <!-- Summary -->
+    <g transform="translate(50,250)">
+      <text x="0" y="0" font-size="18" font-weight="bold">All factors of 12:</text>
+      <text x="0" y="25" font-size="16">1, 2, 3, 4, 6, 12</text>
+      <text x="0" y="50" font-size="14" fill="#666">Each array shows a different way to arrange 12 items</text>
+    </g>
+  </g>
+</svg>
