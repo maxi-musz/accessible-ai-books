@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Even and Odd Number Patterns</title>
+  <desc>Visual representation of even and odd number patterns with examples</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Even and Odd Number Patterns</text>
+    
+    <!-- Even numbers section -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="20" font-weight="bold" fill="#2563eb">Even Numbers</text>
+      <text x="0" y="25" font-size="14">Can be divided by 2 evenly</text>
+      
+      <!-- Even number examples -->
+      <g transform="translate(0,40)">
+        <rect x="0" y="0" width="60" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="30" y="20" text-anchor="middle" font-weight="bold">0</text>
+        <rect x="70" y="0" width="60" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="100" y="20" text-anchor="middle" font-weight="bold">2</text>
+        <rect x="140" y="0" width="60" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-weight="bold">4</text>
+        <rect x="210" y="0" width="60" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="240" y="20" text-anchor="middle" font-weight="bold">6</text>
+        <rect x="280" y="0" width="60" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="310" y="20" text-anchor="middle" font-weight="bold">8</text>
+      </g>
+      
+      <!-- Visual representation with dots -->
+      <g transform="translate(0,100)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Visual Pattern:</text>
+        <g transform="translate(0,20)">
+          <!-- 6 dots in pairs -->
+          <circle cx="10" cy="10" r="5" fill="#2563eb"/>
+          <circle cx="30" cy="10" r="5" fill="#2563eb"/>
+          <circle cx="50" cy="10" r="5" fill="#2563eb"/>
+          <circle cx="70" cy="10" r="5" fill="#2563eb"/>
+          <circle cx="90" cy="10" r="5" fill="#2563eb"/>
+          <circle cx="110" cy="10" r="5" fill="#2563eb"/>
+          <text x="130" y="15" font-size="14">= 6 (even)</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Odd numbers section -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="20" font-weight="bold" fill="#059669">Odd Numbers</text>
+      <text x="0" y="25" font-size="14">Cannot be divided by 2 evenly</text>
+      
+      <!-- Odd number examples -->
+      <g transform="translate(0,40)">
+        <rect x="0" y="0" width="60" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="30" y="20" text-anchor="middle" font-weight="bold">1</text>
+        <rect x="70" y="0" width="60" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="100" y="20" text-anchor="middle" font-weight="bold">3</text>
+        <rect x="140" y="0" width="60" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-weight="bold">5</text>
+        <rect x="210" y="0" width="60" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="240" y="20" text-anchor="middle" font-weight="bold">7</text>
+        <rect x="280" y="0" width="60" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="310" y="20" text-anchor="middle" font-weight="bold">9</text>
+      </g>
+      
+      <!-- Visual representation with dots -->
+      <g transform="translate(0,100)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Visual Pattern:</text>
+        <g transform="translate(0,20)">
+          <!-- 5 dots with one unpaired -->
+          <circle cx="10" cy="10" r="5" fill="#059669"/>
+          <circle cx="30" cy="10" r="5" fill="#059669"/>
+          <circle cx="50" cy="10" r="5" fill="#059669"/>
+          <circle cx="70" cy="10" r="5" fill="#059669"/>
+          <circle cx="90" cy="10" r="5" fill="#059669"/>
+          <text x="110" y="15" font-size="14">= 5 (odd)</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Pattern recognition -->
+    <g transform="translate(200,250)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Pattern Recognition</text>
+      <text x="0" y="25" font-size="14" text-anchor="middle">Even numbers: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20...</text>
+      <text x="0" y="45" font-size="14" text-anchor="middle">Odd numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21...</text>
+      
+      <!-- Alternating pattern -->
+      <g transform="translate(0,70)">
+        <text x="0" y="0" font-size="16" font-weight="bold" text-anchor="middle">Alternating Pattern:</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="30" height="20" fill="#e0f2fe" stroke="#2563eb" stroke-width="1"/>
+          <text x="15" y="15" text-anchor="middle" font-size="12">0</text>
+          <rect x="35" y="0" width="30" height="20" fill="#dcfce7" stroke="#059669" stroke-width="1"/>
+          <text x="50" y="15" text-anchor="middle" font-size="12">1</text>
+          <rect x="70" y="0" width="30" height="20" fill="#e0f2fe" stroke="#2563eb" stroke-width="1"/>
+          <text x="85" y="15" text-anchor="middle" font-size="12">2</text>
+          <rect x="105" y="0" width="30" height="20" fill="#dcfce7" stroke="#059669" stroke-width="1"/>
+          <text x="120" y="15" text-anchor="middle" font-size="12">3</text>
+          <rect x="140" y="0" width="30" height="20" fill="#e0f2fe" stroke="#2563eb" stroke-width="1"/>
+          <text x="155" y="15" text-anchor="middle" font-size="12">4</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

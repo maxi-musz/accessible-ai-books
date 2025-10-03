@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <title>Binary Patterns and Sequences</title>
+  <desc>Common patterns in binary numbers and counting sequences</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Binary Patterns and Sequences</text>
+    
+    <!-- Powers of 2 pattern -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Powers of 2 Pattern</text>
+      <text x="0" y="25" font-size="14">Notice how powers of 2 have exactly one '1' followed by zeros</text>
+      
+      <g transform="translate(0,50)">
+        <rect x="0" y="0" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="20" y="20" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+        <text x="50" y="20" font-size="14">= 2⁰ = 1</text>
+        
+        <rect x="0" y="40" width="40" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+        <text x="20" y="60" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+        <rect x="50" y="40" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="70" y="60" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <text x="100" y="60" font-size="14">= 2¹ = 2</text>
+        
+        <rect x="0" y="80" width="40" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+        <text x="20" y="100" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+        <rect x="50" y="80" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="70" y="100" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <rect x="100" y="80" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="120" y="100" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <text x="150" y="100" font-size="14">= 2² = 4</text>
+        
+        <rect x="0" y="120" width="40" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+        <text x="20" y="140" text-anchor="middle" font-size="14" font-weight="bold">1</text>
+        <rect x="50" y="120" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="70" y="140" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <rect x="100" y="120" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="120" y="140" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <rect x="150" y="120" width="40" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+        <text x="170" y="140" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+        <text x="200" y="140" font-size="14">= 2³ = 8</text>
+      </g>
+    </g>
+    
+    <!-- Binary counting sequence -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Binary Counting Sequence</text>
+      <text x="0" y="25" font-size="14">Counting from 0 to 15 in binary</text>
+      
+      <g transform="translate(0,50)">
+        <rect x="0" y="0" width="200" height="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="15" font-size="12" font-weight="bold">Decimal</text>
+        <text x="80" y="15" font-size="12" font-weight="bold">Binary</text>
+        <text x="150" y="15" font-size="12" font-weight="bold">Pattern</text>
+        
+        <rect x="0" y="20" width="200" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="32" font-size="10">0</text>
+        <text x="80" y="32" font-size="10" font-family="monospace">0</text>
+        <text x="150" y="32" font-size="10">0000</text>
+        
+        <rect x="0" y="35" width="200" height="15" fill="#f0fdf4" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="47" font-size="10">1</text>
+        <text x="80" y="47" font-size="10" font-family="monospace">1</text>
+        <text x="150" y="47" font-size="10">0001</text>
+        
+        <rect x="0" y="50" width="200" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="62" font-size="10">2</text>
+        <text x="80" y="62" font-size="10" font-family="monospace">10</text>
+        <text x="150" y="62" font-size="10">0010</text>
+        
+        <rect x="0" y="65" width="200" height="15" fill="#f0fdf4" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="77" font-size="10">3</text>
+        <text x="80" y="77" font-size="10" font-family="monospace">11</text>
+        <text x="150" y="77" font-size="10">0011</text>
+        
+        <rect x="0" y="80" width="200" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="92" font-size="10">4</text>
+        <text x="80" y="92" font-size="10" font-family="monospace">100</text>
+        <text x="150" y="92" font-size="10">0100</text>
+        
+        <rect x="0" y="95" width="200" height="15" fill="#f0fdf4" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="107" font-size="10">5</text>
+        <text x="80" y="107" font-size="10" font-family="monospace">101</text>
+        <text x="150" y="107" font-size="10">0101</text>
+        
+        <rect x="0" y="110" width="200" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="122" font-size="10">6</text>
+        <text x="80" y="122" font-size="10" font-family="monospace">110</text>
+        <text x="150" y="122" font-size="10">0110</text>
+        
+        <rect x="0" y="125" width="200" height="15" fill="#f0fdf4" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="137" font-size="10">7</text>
+        <text x="80" y="137" font-size="10" font-family="monospace">111</text>
+        <text x="150" y="137" font-size="10">0111</text>
+        
+        <rect x="0" y="140" width="200" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="152" font-size="10">8</text>
+        <text x="80" y="152" font-size="10" font-family="monospace">1000</text>
+        <text x="150" y="152" font-size="10">1000</text>
+      </g>
+    </g>
+    
+    <!-- Alternating pattern -->
+    <g transform="translate(50,300)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Alternating Pattern</text>
+      <text x="0" y="25" font-size="14">Even and odd numbers alternate in the rightmost bit</text>
+      
+      <g transform="translate(0,50)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Even numbers end in 0:</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12" font-family="monospace">0 = 0</text>
+          <text x="0" y="20" font-size="12" font-family="monospace">2 = 10</text>
+          <text x="0" y="40" font-size="12" font-family="monospace">4 = 100</text>
+          <text x="0" y="60" font-size="12" font-family="monospace">6 = 110</text>
+          <text x="0" y="80" font-size="12" font-family="monospace">8 = 1000</text>
+        </g>
+      </g>
+      
+      <g transform="translate(200,50)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Odd numbers end in 1:</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12" font-family="monospace">1 = 1</text>
+          <text x="0" y="20" font-size="12" font-family="monospace">3 = 11</text>
+          <text x="0" y="40" font-size="12" font-family="monospace">5 = 101</text>
+          <text x="0" y="60" font-size="12" font-family="monospace">7 = 111</text>
+          <text x="0" y="80" font-size="12" font-family="monospace">9 = 1001</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Doubling pattern -->
+    <g transform="translate(450,300)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Doubling Pattern</text>
+      <text x="0" y="25" font-size="14">Doubling a number adds a zero to the right</text>
+      
+      <g transform="translate(0,50)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Examples:</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12">1 × 2 = 2</text>
+          <text x="0" y="20" font-size="12" font-family="monospace">1 → 10</text>
+          <text x="0" y="40" font-size="12">2 × 2 = 4</text>
+          <text x="0" y="60" font-size="12" font-family="monospace">10 → 100</text>
+          <text x="0" y="80" font-size="12">4 × 2 = 8</text>
+          <text x="0" y="100" font-size="12" font-family="monospace">100 → 1000</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

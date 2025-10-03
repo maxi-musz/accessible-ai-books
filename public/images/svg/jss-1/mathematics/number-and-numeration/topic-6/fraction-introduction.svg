@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Fraction Introduction</title>
+  <desc>Visual introduction to fractions showing parts of a whole</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Understanding Fractions: Parts of a Whole</text>
+    
+    <!-- Pizza example -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Pizza Example</text>
+      <text x="0" y="25" font-size="14">A whole pizza divided into equal parts</text>
+      
+      <!-- Whole pizza -->
+      <g transform="translate(0,40)">
+        <circle cx="60" cy="60" r="50" fill="#ffeb3b" stroke="#f57f17" stroke-width="3"/>
+        <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold">Whole Pizza</text>
+        <text x="60" y="120" text-anchor="middle" font-size="12">1 whole = 1/1</text>
+      </g>
+      
+      <!-- Half pizza -->
+      <g transform="translate(150,40)">
+        <path d="M10,10 A50,50 0 0,1 110,10 L60,60 Z" fill="#ff9800" stroke="#f57f17" stroke-width="3"/>
+        <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold">Half Pizza</text>
+        <text x="60" y="120" text-anchor="middle" font-size="12">1/2 of the whole</text>
+      </g>
+      
+      <!-- Quarter pizza -->
+      <g transform="translate(250,40)">
+        <path d="M10,10 A50,50 0 0,1 60,60 L60,10 Z" fill="#ff5722" stroke="#f57f17" stroke-width="3"/>
+        <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold">Quarter Pizza</text>
+        <text x="60" y="120" text-anchor="middle" font-size="12">1/4 of the whole</text>
+      </g>
+    </g>
+    
+    <!-- Fraction bar example -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Fraction Bar Example</text>
+      <text x="0" y="25" font-size="14">A bar divided into equal parts</text>
+      
+      <!-- Whole bar -->
+      <g transform="translate(0,40)">
+        <rect x="10" y="10" width="200" height="40" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+        <text x="110" y="35" text-anchor="middle" font-size="14" font-weight="bold">1 whole</text>
+        <text x="110" y="70" text-anchor="middle" font-size="12">1/1</text>
+      </g>
+      
+      <!-- Half bar -->
+      <g transform="translate(0,90)">
+        <rect x="10" y="10" width="100" height="40" fill="#ff9800" stroke="#f57f17" stroke-width="2"/>
+        <rect x="110" y="10" width="100" height="40" fill="#e0e0e0" stroke="#f57f17" stroke-width="2"/>
+        <text x="110" y="35" text-anchor="middle" font-size="14" font-weight="bold">1/2</text>
+        <text x="110" y="70" text-anchor="middle" font-size="12">1 out of 2 equal parts</text>
+      </g>
+      
+      <!-- Third bar -->
+      <g transform="translate(0,140)">
+        <rect x="10" y="10" width="60" height="40" fill="#2196f3" stroke="#1976d2" stroke-width="2"/>
+        <rect x="70" y="10" width="60" height="40" fill="#e0e0e0" stroke="#1976d2" stroke-width="2"/>
+        <rect x="130" y="10" width="60" height="40" fill="#e0e0e0" stroke="#1976d2" stroke-width="2"/>
+        <text x="110" y="35" text-anchor="middle" font-size="14" font-weight="bold">1/3</text>
+        <text x="110" y="70" text-anchor="middle" font-size="12">1 out of 3 equal parts</text>
+      </g>
+    </g>
+    
+    <!-- Fraction notation -->
+    <g transform="translate(200,280)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Fraction Notation</text>
+      
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="16" text-anchor="middle">3</text>
+        <text x="0" y="20" font-size="12" text-anchor="middle">Numerator</text>
+        <text x="0" y="35" font-size="12" text-anchor="middle">(how many parts we have)</text>
+        <line x1="-20" y1="45" x2="20" y2="45" stroke="#111" stroke-width="2"/>
+        <text x="0" y="65" font-size="16" text-anchor="middle">4</text>
+        <text x="0" y="85" font-size="12" text-anchor="middle">Denominator</text>
+        <text x="0" y="100" font-size="12" text-anchor="middle">(how many equal parts the whole is divided into)</text>
+      </g>
+    </g>
+  </g>
+</svg>

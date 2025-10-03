@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Real-World Examples of Pairs</title>
+  <desc>Visual examples of everyday items that come in pairs</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Real-World Examples of Pairs</text>
+    
+    <!-- Shoes -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Shoes</text>
+      <g transform="translate(0,20)">
+        <ellipse cx="20" cy="30" rx="25" ry="15" fill="#8b4513" stroke="#111" stroke-width="2"/>
+        <ellipse cx="20" cy="25" rx="20" ry="10" fill="#654321"/>
+        <ellipse cx="60" cy="30" rx="25" ry="15" fill="#8b4513" stroke="#111" stroke-width="2"/>
+        <ellipse cx="60" cy="25" rx="20" ry="10" fill="#654321"/>
+        <text x="90" y="35" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Gloves -->
+    <g transform="translate(250,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Gloves</text>
+      <g transform="translate(0,20)">
+        <path d="M10,10 Q10,5 15,5 Q20,5 20,10 Q20,25 15,30 Q10,25 10,10" fill="#ff6b6b" stroke="#111" stroke-width="2"/>
+        <path d="M40,10 Q40,5 45,5 Q50,5 50,10 Q50,25 45,30 Q40,25 40,10" fill="#ff6b6b" stroke="#111" stroke-width="2"/>
+        <text x="70" y="35" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Eyes -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Eyes</text>
+      <g transform="translate(0,20)">
+        <circle cx="20" cy="20" r="8" fill="white" stroke="#111" stroke-width="2"/>
+        <circle cx="20" cy="20" r="5" fill="#000"/>
+        <circle cx="18" cy="18" r="2" fill="white"/>
+        <circle cx="50" cy="20" r="8" fill="white" stroke="#111" stroke-width="2"/>
+        <circle cx="50" cy="20" r="5" fill="#000"/>
+        <circle cx="48" cy="18" r="2" fill="white"/>
+        <text x="80" y="25" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Wheels -->
+    <g transform="translate(650,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Wheels</text>
+      <g transform="translate(0,20)">
+        <circle cx="20" cy="20" r="12" fill="#666" stroke="#111" stroke-width="2"/>
+        <circle cx="20" cy="20" r="8" fill="#999"/>
+        <circle cx="20" cy="20" r="4" fill="#ccc"/>
+        <circle cx="50" cy="20" r="12" fill="#666" stroke="#111" stroke-width="2"/>
+        <circle cx="50" cy="20" r="8" fill="#999"/>
+        <circle cx="50" cy="20" r="4" fill="#ccc"/>
+        <text x="80" y="25" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Hands -->
+    <g transform="translate(50,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Hands</text>
+      <g transform="translate(0,20)">
+        <path d="M10,10 Q10,5 15,5 Q20,5 20,10 Q20,25 15,30 Q10,25 10,10" fill="#ffdbac" stroke="#111" stroke-width="2"/>
+        <path d="M40,10 Q40,5 45,5 Q50,5 50,10 Q50,25 45,30 Q40,25 40,10" fill="#ffdbac" stroke="#111" stroke-width="2"/>
+        <text x="70" y="35" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Socks -->
+    <g transform="translate(250,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Socks</text>
+      <g transform="translate(0,20)">
+        <ellipse cx="20" cy="20" rx="15" ry="25" fill="#4a90e2" stroke="#111" stroke-width="2"/>
+        <ellipse cx="50" cy="20" rx="15" ry="25" fill="#4a90e2" stroke="#111" stroke-width="2"/>
+        <text x="80" y="25" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Ears -->
+    <g transform="translate(450,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Ears</text>
+      <g transform="translate(0,20)">
+        <path d="M15,10 Q10,15 15,25 Q20,30 25,25 Q30,15 25,10 Q20,5 15,10" fill="#ffdbac" stroke="#111" stroke-width="2"/>
+        <path d="M45,10 Q40,15 45,25 Q50,30 55,25 Q60,15 55,10 Q50,5 45,10" fill="#ffdbac" stroke="#111" stroke-width="2"/>
+        <text x="80" y="25" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Eggs -->
+    <g transform="translate(650,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Eggs</text>
+      <g transform="translate(0,20)">
+        <ellipse cx="20" cy="20" rx="8" ry="12" fill="#fff" stroke="#111" stroke-width="2"/>
+        <ellipse cx="50" cy="20" rx="8" ry="12" fill="#fff" stroke="#111" stroke-width="2"/>
+        <text x="80" y="25" font-size="14">= 1 pair</text>
+      </g>
+    </g>
+    
+    <!-- Counting examples -->
+    <g transform="translate(200,300)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Counting Examples</text>
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14" text-anchor="middle">• 3 pairs of shoes = 6 individual shoes</text>
+        <text x="0" y="25" font-size="14" text-anchor="middle">• 4 pairs of gloves = 8 individual gloves</text>
+        <text x="0" y="50" font-size="14" text-anchor="middle">• 2 pairs of wheels = 4 individual wheels</text>
+        <text x="0" y="75" font-size="14" text-anchor="middle">• 5 pairs of socks = 10 individual socks</text>
+      </g>
+    </g>
+  </g>
+</svg>

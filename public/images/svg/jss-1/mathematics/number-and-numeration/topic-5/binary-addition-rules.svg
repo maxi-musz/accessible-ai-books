@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <title>Binary Addition Rules</title>
+  <desc>Rules and examples for binary addition</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Binary Addition Rules</text>
+    
+    <!-- Basic rules -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Basic Addition Rules</text>
+      
+      <!-- Rule 1: 0 + 0 = 0 -->
+      <g transform="translate(0,40)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Rule 1: 0 + 0 = 0</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="15" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+          <text x="40" y="20" font-size="16">+</text>
+          <rect x="60" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="75" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+          <text x="100" y="20" font-size="16">=</text>
+          <rect x="120" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="135" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+        </g>
+      </g>
+      
+      <!-- Rule 2: 0 + 1 = 1 -->
+      <g transform="translate(0,100)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Rule 2: 0 + 1 = 1</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="15" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+          <text x="40" y="20" font-size="16">+</text>
+          <rect x="60" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="75" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+          <text x="100" y="20" font-size="16">=</text>
+          <rect x="120" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="135" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+        </g>
+      </g>
+      
+      <!-- Rule 3: 1 + 0 = 1 -->
+      <g transform="translate(0,160)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Rule 3: 1 + 0 = 1</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="15" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+          <text x="40" y="20" font-size="16">+</text>
+          <rect x="60" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="75" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+          <text x="100" y="20" font-size="16">=</text>
+          <rect x="120" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="135" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+        </g>
+      </g>
+      
+      <!-- Rule 4: 1 + 1 = 10 -->
+      <g transform="translate(0,220)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Rule 4: 1 + 1 = 10 (carry 1)</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="15" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+          <text x="40" y="20" font-size="16">+</text>
+          <rect x="60" y="0" width="30" height="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="75" y="20" text-anchor="middle" font-size="16" font-weight="bold">1</text>
+          <text x="100" y="20" font-size="16">=</text>
+          <rect x="120" y="0" width="30" height="30" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="135" y="20" text-anchor="middle" font-size="16" font-weight="bold">0</text>
+          <text x="160" y="20" font-size="14" fill="#ea580c">(carry 1)</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Addition example -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Addition Example: 101 + 110</text>
+      
+      <!-- Step by step -->
+      <g transform="translate(0,40)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Step-by-Step Solution:</text>
+        
+        <!-- Setup -->
+        <g transform="translate(0,30)">
+          <text x="0" y="0" font-size="14">Set up the addition:</text>
+          <g transform="translate(0,20)">
+            <text x="0" y="0" font-size="14" font-family="monospace">  101</text>
+            <text x="0" y="20" font-size="14" font-family="monospace">+ 110</text>
+            <text x="0" y="40" font-size="14" font-family="monospace">-----</text>
+          </g>
+        </g>
+        
+        <!-- Step 1 -->
+        <g transform="translate(0,100)">
+          <text x="0" y="0" font-size="14" font-weight="bold">Step 1: Add rightmost digits (1 + 0 = 1)</text>
+          <g transform="translate(0,20)">
+            <text x="0" y="0" font-size="14" font-family="monospace">  101</text>
+            <text x="0" y="20" font-size="14" font-family="monospace">+ 110</text>
+            <text x="0" y="40" font-size="14" font-family="monospace">-----</text>
+            <text x="0" y="60" font-size="14" font-family="monospace">    1</text>
+          </g>
+        </g>
+        
+        <!-- Step 2 -->
+        <g transform="translate(0,180)">
+          <text x="0" y="0" font-size="14" font-weight="bold">Step 2: Add middle digits (0 + 1 = 1)</text>
+          <g transform="translate(0,20)">
+            <text x="0" y="0" font-size="14" font-family="monospace">  101</text>
+            <text x="0" y="20" font-size="14" font-family="monospace">+ 110</text>
+            <text x="0" y="40" font-size="14" font-family="monospace">-----</text>
+            <text x="0" y="60" font-size="14" font-family="monospace">   11</text>
+          </g>
+        </g>
+        
+        <!-- Step 3 -->
+        <g transform="translate(0,260)">
+          <text x="0" y="0" font-size="14" font-weight="bold">Step 3: Add leftmost digits (1 + 1 = 10, write 0, carry 1)</text>
+          <g transform="translate(0,20)">
+            <text x="0" y="0" font-size="14" font-family="monospace">  101</text>
+            <text x="0" y="20" font-size="14" font-family="monospace">+ 110</text>
+            <text x="0" y="40" font-size="14" font-family="monospace">-----</text>
+            <text x="0" y="60" font-size="14" font-family="monospace"> 1011</text>
+          </g>
+        </g>
+        
+        <!-- Final result -->
+        <g transform="translate(0,340)">
+          <text x="0" y="0" font-size="14" font-weight="bold">Final Result: 1011</text>
+          <text x="0" y="25" font-size="14">101 in binary + 110 in binary = 1011 in binary</text>
+          <text x="0" y="50" font-size="14">5 in decimal + 6 in decimal = 11 in decimal</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Practice problems -->
+    <g transform="translate(50,400)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Practice Problems</text>
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14">1. 11 + 10 = ?</text>
+        <text x="0" y="25" font-size="14">2. 101 + 11 = ?</text>
+        <text x="0" y="50" font-size="14">3. 110 + 101 = ?</text>
+        <text x="0" y="75" font-size="14">4. 1000 + 111 = ?</text>
+      </g>
+    </g>
+  </g>
+</svg>

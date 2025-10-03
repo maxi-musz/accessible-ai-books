@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Advanced Skip Counting Techniques</title>
+  <desc>Advanced skip counting techniques for larger numbers</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Advanced Skip Counting Techniques</text>
+    
+    <!-- Counting from 10 -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Starting from 10</text>
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="20" y="20" text-anchor="middle" font-weight="bold">10</text>
+        <rect x="50" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="70" y="20" text-anchor="middle" font-weight="bold">12</text>
+        <rect x="100" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="120" y="20" text-anchor="middle" font-weight="bold">14</text>
+        <rect x="150" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-weight="bold">16</text>
+        <rect x="200" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="220" y="20" text-anchor="middle" font-weight="bold">18</text>
+        <rect x="250" y="0" width="40" height="30" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+        <text x="270" y="20" text-anchor="middle" font-weight="bold">20</text>
+      </g>
+      <text x="0" y="70" font-size="14">10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30...</text>
+    </g>
+    
+    <!-- Counting from 25 -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Starting from 25</text>
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="20" y="20" text-anchor="middle" font-weight="bold">25</text>
+        <rect x="50" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="70" y="20" text-anchor="middle" font-weight="bold">27</text>
+        <rect x="100" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="120" y="20" text-anchor="middle" font-weight="bold">29</text>
+        <rect x="150" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-weight="bold">31</text>
+        <rect x="200" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="220" y="20" text-anchor="middle" font-weight="bold">33</text>
+        <rect x="250" y="0" width="40" height="30" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="5"/>
+        <text x="270" y="20" text-anchor="middle" font-weight="bold">35</text>
+      </g>
+      <text x="0" y="70" font-size="14">25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45...</text>
+    </g>
+    
+    <!-- Counting from 50 -->
+    <g transform="translate(50,180)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Starting from 50</text>
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="20" y="20" text-anchor="middle" font-weight="bold">50</text>
+        <rect x="50" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="70" y="20" text-anchor="middle" font-weight="bold">52</text>
+        <rect x="100" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="120" y="20" text-anchor="middle" font-weight="bold">54</text>
+        <rect x="150" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-weight="bold">56</text>
+        <rect x="200" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="220" y="20" text-anchor="middle" font-weight="bold">58</text>
+        <rect x="250" y="0" width="40" height="30" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+        <text x="270" y="20" text-anchor="middle" font-weight="bold">60</text>
+      </g>
+      <text x="0" y="70" font-size="14">50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70...</text>
+    </g>
+    
+    <!-- Counting from 100 -->
+    <g transform="translate(450,180)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Starting from 100</text>
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="20" y="20" text-anchor="middle" font-size="12" font-weight="bold">100</text>
+        <rect x="50" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="70" y="20" text-anchor="middle" font-size="12" font-weight="bold">102</text>
+        <rect x="100" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="120" y="20" text-anchor="middle" font-size="12" font-weight="bold">104</text>
+        <rect x="150" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="170" y="20" text-anchor="middle" font-size="12" font-weight="bold">106</text>
+        <rect x="200" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="220" y="20" text-anchor="middle" font-size="12" font-weight="bold">108</text>
+        <rect x="250" y="0" width="40" height="30" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+        <text x="270" y="20" text-anchor="middle" font-size="12" font-weight="bold">110</text>
+      </g>
+      <text x="0" y="70" font-size="14">100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120...</text>
+    </g>
+    
+    <!-- Mental math strategies -->
+    <g transform="translate(200,300)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Mental Math Strategies</text>
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14" text-anchor="middle">• Add 2 to each number: 10 + 2 = 12, 12 + 2 = 14</text>
+        <text x="0" y="25" font-size="14" text-anchor="middle">• Use number patterns: 20, 22, 24, 26, 28, 30</text>
+        <text x="0" y="50" font-size="14" text-anchor="middle">• Count by tens first, then by twos: 50, 60, 70, 72, 74, 76</text>
+        <text x="0" y="75" font-size="14" text-anchor="middle">• Practice regularly to build fluency and speed</text>
+      </g>
+    </g>
+  </g>
+</svg>

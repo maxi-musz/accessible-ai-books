@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <title>Computer Binary Usage</title>
+  <desc>How computers use binary for data storage and processing</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">How Computers Use Binary</text>
+    
+    <!-- Computer components -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Computer Components</text>
+      
+      <!-- CPU -->
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="120" height="80" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="10"/>
+        <text x="60" y="25" text-anchor="middle" font-size="14" font-weight="bold">CPU</text>
+        <text x="60" y="45" text-anchor="middle" font-size="12">Central Processing Unit</text>
+        <text x="60" y="60" text-anchor="middle" font-size="10">Processes binary instructions</text>
+      </g>
+      
+      <!-- Memory -->
+      <g transform="translate(140,30)">
+        <rect x="0" y="0" width="120" height="80" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="10"/>
+        <text x="60" y="25" text-anchor="middle" font-size="14" font-weight="bold">Memory</text>
+        <text x="60" y="45" text-anchor="middle" font-size="12">RAM/Storage</text>
+        <text x="60" y="60" text-anchor="middle" font-size="10">Stores binary data</text>
+      </g>
+      
+      <!-- Network -->
+      <g transform="translate(280,30)">
+        <rect x="0" y="0" width="120" height="80" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="10"/>
+        <text x="60" y="25" text-anchor="middle" font-size="14" font-weight="bold">Network</text>
+        <text x="60" y="45" text-anchor="middle" font-size="12">Internet/WiFi</text>
+        <text x="60" y="60" text-anchor="middle" font-size="10">Transmits binary signals</text>
+      </g>
+    </g>
+    
+    <!-- Data types -->
+    <g transform="translate(50,200)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Data Types in Binary</text>
+      
+      <!-- Text -->
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Text (ASCII)</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12">Letter 'A' = 01000001 (8 bits)</text>
+          <text x="0" y="20" font-size="12">Letter 'B' = 01000010 (8 bits)</text>
+          <text x="0" y="40" font-size="12">Word "HELLO" = 5 bytes = 40 bits</text>
+        </g>
+      </g>
+      
+      <!-- Numbers -->
+      <g transform="translate(0,120)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Numbers</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12">Integer 5 = 00000101 (8 bits)</text>
+          <text x="0" y="20" font-size="12">Integer 255 = 11111111 (8 bits)</text>
+          <text x="0" y="40" font-size="12">Large numbers use more bits</text>
+        </g>
+      </g>
+      
+      <!-- Images -->
+      <g transform="translate(0,220)">
+        <text x="0" y="0" font-size="14" font-weight="bold">Images (Pixels)</text>
+        <g transform="translate(0,20)">
+          <text x="0" y="0" font-size="12">Each pixel = 3 bytes (24 bits)</text>
+          <text x="0" y="20" font-size="12">Red: 8 bits, Green: 8 bits, Blue: 8 bits</text>
+          <text x="0" y="40" font-size="12">1000×1000 image = 3 million bytes</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- File sizes -->
+    <g transform="translate(450,200)">
+      <text x="0" y="0" font-size="18" font-weight="bold">File Sizes</text>
+      
+      <g transform="translate(0,30)">
+        <rect x="0" y="0" width="250" height="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="15" font-size="12" font-weight="bold">Unit</text>
+        <text x="100" y="15" font-size="12" font-weight="bold">Bytes</text>
+        <text x="180" y="15" font-size="12" font-weight="bold">Bits</text>
+        
+        <rect x="0" y="20" width="250" height="15" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="32" font-size="10">1 Byte</text>
+        <text x="100" y="32" font-size="10">1</text>
+        <text x="180" y="32" font-size="10">8</text>
+        
+        <rect x="0" y="35" width="250" height="15" fill="#f0fdf4" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="47" font-size="10">1 Kilobyte (KB)</text>
+        <text x="100" y="47" font-size="10">1,024</text>
+        <text x="180" y="47" font-size="10">8,192</text>
+        
+        <rect x="0" y="50" width="250" height="15" fill="#fef3c7" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="62" font-size="10">1 Megabyte (MB)</text>
+        <text x="100" y="62" font-size="10">1,048,576</text>
+        <text x="180" y="62" font-size="10">8,388,608</text>
+        
+        <rect x="0" y="65" width="250" height="15" fill="#e0f2fe" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="10" y="77" font-size="10">1 Gigabyte (GB)</text>
+        <text x="100" y="77" font-size="10">1,073,741,824</text>
+        <text x="180" y="77" font-size="10">8,589,934,592</text>
+      </g>
+    </g>
+    
+    <!-- Binary operations -->
+    <g transform="translate(200,350)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Binary Operations in Computers</text>
+      
+      <g transform="translate(0,30)">
+        <g transform="translate(0,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#fef2f2" stroke="#dc2626" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Addition</text>
+        </g>
+        <g transform="translate(170,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Subtraction</text>
+        </g>
+        <g transform="translate(340,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Multiplication</text>
+        </g>
+      </g>
+      
+      <g transform="translate(0,60)">
+        <g transform="translate(0,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Division</text>
+        </g>
+        <g transform="translate(170,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#fce7f3" stroke="#be185d" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Logic Gates</text>
+        </g>
+        <g transform="translate(340,0)">
+          <rect x="0" y="0" width="150" height="40" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2" rx="5"/>
+          <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="bold">Comparisons</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

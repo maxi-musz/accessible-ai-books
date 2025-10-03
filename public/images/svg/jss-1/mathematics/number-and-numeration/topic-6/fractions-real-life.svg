@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <title>Real-Life Applications of Fractions</title>
+  <desc>Common uses of fractions in daily life</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Real-Life Applications of Fractions</text>
+    
+    <!-- Cooking -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold" fill="#ff9800">Cooking and Baking</text>
+      
+      <g transform="translate(0,30)">
+        <!-- Recipe -->
+        <rect x="0" y="0" width="200" height="120" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="5"/>
+        <text x="10" y="20" font-size="14" font-weight="bold">Recipe Card</text>
+        <text x="10" y="40" font-size="12">• 1/2 cup flour</text>
+        <text x="10" y="55" font-size="12">• 1/4 cup sugar</text>
+        <text x="10" y="70" font-size="12">• 1/3 cup milk</text>
+        <text x="10" y="85" font-size="12">• 3/4 teaspoon salt</text>
+        <text x="10" y="100" font-size="12">• Bake for 1/2 hour</text>
+      </g>
+    </g>
+    
+    <!-- Shopping -->
+    <g transform="translate(300,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold" fill="#4caf50">Shopping and Money</text>
+      
+      <g transform="translate(0,30)">
+        <!-- Sale tag -->
+        <rect x="0" y="0" width="200" height="120" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="5"/>
+        <text x="10" y="20" font-size="14" font-weight="bold">Sale Tag</text>
+        <text x="10" y="40" font-size="12">• 1/4 off = 25% off</text>
+        <text x="10" y="55" font-size="12">• 1/2 price = 50% off</text>
+        <text x="10" y="70" font-size="12">• 3/4 off = 75% off</text>
+        <text x="10" y="85" font-size="12">• Buy 2 get 1/2 off</text>
+        <text x="10" y="100" font-size="12">• 1/3 discount</text>
+      </g>
+    </g>
+    
+    <!-- Sports -->
+    <g transform="translate(550,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold" fill="#2196f3">Sports and Games</text>
+      
+      <g transform="translate(0,30)">
+        <!-- Scoreboard -->
+        <rect x="0" y="0" width="200" height="120" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+        <text x="10" y="20" font-size="14" font-weight="bold">Game Statistics</text>
+        <text x="10" y="40" font-size="12">• 3/4 of the game completed</text>
+        <text x="10" y="55" font-size="12">• 1/2 time remaining</text>
+        <text x="10" y="70" font-size="12">• 2/3 of shots made</text>
+        <text x="10" y="85" font-size="12">• 1/4 of the field covered</text>
+        <text x="10" y="100" font-size="12">• 5/6 of the season done</text>
+      </g>
+    </g>
+    
+    <!-- Measurements -->
+    <g transform="translate(50,250)">
+      <text x="0" y="0" font-size="18" font-weight="bold" fill="#9c27b0">Measurements</text>
+      
+      <g transform="translate(0,30)">
+        <!-- Ruler -->
+        <rect x="0" y="0" width="300" height="40" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+        <text x="10" y="25" font-size="14" font-weight="bold">Ruler Measurements</text>
+        
+        <!-- Ruler markings -->
+        <g transform="translate(0,50)">
+          <line x1="0" y1="0" x2="300" y2="0" stroke="#111" stroke-width="2"/>
+          <line x1="0" y1="-5" x2="0" y2="5" stroke="#111" stroke-width="2"/>
+          <line x1="75" y1="-3" x2="75" y2="3" stroke="#111" stroke-width="1"/>
+          <line x1="150" y1="-5" x2="150" y2="5" stroke="#111" stroke-width="2"/>
+          <line x1="225" y1="-3" x2="225" y2="3" stroke="#111" stroke-width="1"/>
+          <line x1="300" y1="-5" x2="300" y2="5" stroke="#111" stroke-width="2"/>
+          
+          <text x="0" y="20" text-anchor="middle" font-size="10">0</text>
+          <text x="75" y="20" text-anchor="middle" font-size="10">1/4</text>
+          <text x="150" y="20" text-anchor="middle" font-size="10">1/2</text>
+          <text x="225" y="20" text-anchor="middle" font-size="10">3/4</text>
+          <text x="300" y="20" text-anchor="middle" font-size="10">1</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Time -->
+    <g transform="translate(400,250)">
+      <text x="0" y="0" font-size="18" font-weight="bold" fill="#f44336">Time</text>
+      
+      <g transform="translate(0,30)">
+        <!-- Clock -->
+        <circle cx="100" cy="60" r="50" fill="#ffebee" stroke="#f44336" stroke-width="3"/>
+        <line x1="100" y1="60" x2="100" y2="30" stroke="#f44336" stroke-width="3"/>
+        <line x1="100" y1="60" x2="120" y2="60" stroke="#f44336" stroke-width="2"/>
+        <circle cx="100" cy="60" r="3" fill="#f44336"/>
+        
+        <text x="100" y="130" text-anchor="middle" font-size="14" font-weight="bold">3:30</text>
+        <text x="100" y="150" text-anchor="middle" font-size="12">Half past 3</text>
+        <text x="100" y="170" text-anchor="middle" font-size="12">1/2 hour = 30 minutes</text>
+      </g>
+    </g>
+    
+    <!-- Construction -->
+    <g transform="translate(50,380)">
+      <text x="0" y="0" font-size="16" font-weight="bold" fill="#795548">Construction</text>
+      <g transform="translate(0,20)">
+        <text x="0" y="0" font-size="12">• 3/4 inch pipe</text>
+        <text x="0" y="15" font-size="12">• 1/2 inch bolts</text>
+        <text x="0" y="30" font-size="12">• 1/4 inch spacing</text>
+        <text x="0" y="45" font-size="12">• 5/8 inch thickness</text>
+      </g>
+    </g>
+    
+    <!-- Medicine -->
+    <g transform="translate(200,380)">
+      <text x="0" y="0" font-size="16" font-weight="bold" fill="#607d8b">Medicine</text>
+      <g transform="translate(0,20)">
+        <text x="0" y="0" font-size="12">• 1/2 tablet twice daily</text>
+        <text x="0" y="15" font-size="12">• 1/4 teaspoon dosage</text>
+        <text x="0" y="30" font-size="12">• 3/4 strength solution</text>
+        <text x="0" y="45" font-size="12">• 1/3 of the bottle</text>
+      </g>
+    </g>
+    
+    <!-- Art -->
+    <g transform="translate(350,380)">
+      <text x="0" y="0" font-size="16" font-weight="bold" fill="#e91e63">Art and Design</text>
+      <g transform="translate(0,20)">
+        <text x="0" y="0" font-size="12">• 1/3 rule in photography</text>
+        <text x="0" y="15" font-size="12">• 2/3 composition</text>
+        <text x="0" y="30" font-size="12">• 1/4 inch margins</text>
+        <text x="0" y="45" font-size="12">• 3/4 scale model</text>
+      </g>
+    </g>
+  </g>
+</svg>

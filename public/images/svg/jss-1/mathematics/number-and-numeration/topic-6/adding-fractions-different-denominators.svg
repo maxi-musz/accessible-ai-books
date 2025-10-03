@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <title>Adding Fractions with Different Denominators</title>
+  <desc>Finding common denominators for adding fractions</desc>
+  <rect width="800" height="500" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Adding Fractions with Different Denominators</text>
+    
+    <!-- Example: 1/3 + 1/4 -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Example: 1/3 + 1/4</text>
+      
+      <!-- Original fractions -->
+      <g transform="translate(0,40)">
+        <text x="0" y="0" font-size="14" font-weight="bold">1/3</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="120" height="40" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+          <rect x="0" y="0" width="40" height="40" fill="#2196f3" stroke="#1976d2" stroke-width="2"/>
+          <text x="60" y="60" text-anchor="middle" font-size="12">1 out of 3 parts</text>
+        </g>
+      </g>
+      
+      <g transform="translate(0,120)">
+        <text x="0" y="0" font-size="14" font-weight="bold">1/4</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="120" height="40" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+          <rect x="0" y="0" width="30" height="40" fill="#66bb6a" stroke="#4caf50" stroke-width="2"/>
+          <text x="60" y="60" text-anchor="middle" font-size="12">1 out of 4 parts</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Finding common denominator -->
+    <g transform="translate(300,80)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Step 1: Find Common Denominator</text>
+      <text x="0" y="25" font-size="14">3 × 4 = 12</text>
+      
+      <g transform="translate(0,50)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Convert 1/3 to 4/12:</text>
+        <text x="0" y="25" font-size="14">1 × 4 = 4</text>
+        <text x="0" y="45" font-size="14">3 × 4 = 12</text>
+        <text x="0" y="65" font-size="14" font-weight="bold">1/3 = 4/12</text>
+      </g>
+      
+      <g transform="translate(0,150)">
+        <text x="0" y="0" font-size="16" font-weight="bold">Convert 1/4 to 3/12:</text>
+        <text x="0" y="25" font-size="14">1 × 3 = 3</text>
+        <text x="0" y="45" font-size="14">4 × 3 = 12</text>
+        <text x="0" y="65" font-size="14" font-weight="bold">1/4 = 3/12</text>
+      </g>
+    </g>
+    
+    <!-- Visual representation with common denominator -->
+    <g transform="translate(50,280)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Step 2: Add with Common Denominator</text>
+      
+      <g transform="translate(0,40)">
+        <text x="0" y="0" font-size="14" font-weight="bold">4/12</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="240" height="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+          <rect x="0" y="0" width="80" height="30" fill="#2196f3" stroke="#1976d2" stroke-width="2"/>
+          <text x="120" y="50" text-anchor="middle" font-size="12">4 out of 12 parts</text>
+        </g>
+      </g>
+      
+      <g transform="translate(0,100)">
+        <text x="0" y="0" font-size="14" font-weight="bold">+ 3/12</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="240" height="30" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+          <rect x="0" y="0" width="60" height="30" fill="#66bb6a" stroke="#4caf50" stroke-width="2"/>
+          <text x="120" y="50" text-anchor="middle" font-size="12">3 out of 12 parts</text>
+        </g>
+      </g>
+      
+      <g transform="translate(0,160)">
+        <text x="0" y="0" font-size="14" font-weight="bold">= 7/12</text>
+        <g transform="translate(0,20)">
+          <rect x="0" y="0" width="240" height="30" fill="#fce4ec" stroke="#e91e63" stroke-width="2"/>
+          <rect x="0" y="0" width="140" height="30" fill="#f06292" stroke="#e91e63" stroke-width="2"/>
+          <text x="120" y="50" text-anchor="middle" font-size="12">7 out of 12 parts</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Final answer -->
+    <g transform="translate(400,280)">
+      <text x="0" y="0" font-size="18" font-weight="bold">Final Answer</text>
+      <g transform="translate(0,40)">
+        <text x="0" y="0" font-size="16" font-weight="bold">1/3 + 1/4 = 7/12</text>
+        <text x="0" y="30" font-size="14">We cannot simplify 7/12 further</text>
+      </g>
+    </g>
+    
+    <!-- General method -->
+    <g transform="translate(50,420)">
+      <text x="0" y="0" font-size="16" font-weight="bold">General Method</text>
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14">1. Find the common denominator (multiply denominators)</text>
+        <text x="0" y="20" font-size="14">2. Convert each fraction to equivalent fraction with common denominator</text>
+        <text x="0" y="40" font-size="14">3. Add the numerators, keep the denominator</text>
+        <text x="0" y="60" font-size="14">4. Simplify if possible</text>
+      </g>
+    </g>
+  </g>
+</svg>

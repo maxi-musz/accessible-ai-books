@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <title>Pattern Sequences and Skip Counting</title>
+  <desc>Various number patterns and sequences using skip counting</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111">
+    <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold">Pattern Recognition and Sequences</text>
+    
+    <!-- Pattern 1: Even numbers -->
+    <g transform="translate(50,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Pattern 1: Even Numbers</text>
+      <g transform="translate(0,25)">
+        <rect x="0" y="0" width="30" height="25" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="3"/>
+        <text x="15" y="17" text-anchor="middle" font-weight="bold">2</text>
+        <rect x="35" y="0" width="30" height="25" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="3"/>
+        <text x="50" y="17" text-anchor="middle" font-weight="bold">4</text>
+        <rect x="70" y="0" width="30" height="25" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="3"/>
+        <text x="85" y="17" text-anchor="middle" font-weight="bold">6</text>
+        <rect x="105" y="0" width="30" height="25" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="3"/>
+        <text x="120" y="17" text-anchor="middle" font-weight="bold">8</text>
+        <rect x="140" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="155" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="175" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="190" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="210" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="225" y="17" text-anchor="middle" font-weight="bold">?</text>
+      </g>
+      <text x="0" y="70" font-size="14">Answer: 10, 12, 14</text>
+    </g>
+    
+    <!-- Pattern 2: Odd numbers -->
+    <g transform="translate(450,80)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Pattern 2: Odd Numbers</text>
+      <g transform="translate(0,25)">
+        <rect x="0" y="0" width="30" height="25" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="3"/>
+        <text x="15" y="17" text-anchor="middle" font-weight="bold">1</text>
+        <rect x="35" y="0" width="30" height="25" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="3"/>
+        <text x="50" y="17" text-anchor="middle" font-weight="bold">3</text>
+        <rect x="70" y="0" width="30" height="25" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="3"/>
+        <text x="85" y="17" text-anchor="middle" font-weight="bold">5</text>
+        <rect x="105" y="0" width="30" height="25" fill="#dcfce7" stroke="#059669" stroke-width="2" rx="3"/>
+        <text x="120" y="17" text-anchor="middle" font-weight="bold">7</text>
+        <rect x="140" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="155" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="175" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="190" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="210" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="225" y="17" text-anchor="middle" font-weight="bold">?</text>
+      </g>
+      <text x="0" y="70" font-size="14">Answer: 9, 11, 13</text>
+    </g>
+    
+    <!-- Pattern 3: Skip counting from 10 -->
+    <g transform="translate(50,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Pattern 3: Skip Counting from 10</text>
+      <g transform="translate(0,25)">
+        <rect x="0" y="0" width="30" height="25" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="3"/>
+        <text x="15" y="17" text-anchor="middle" font-weight="bold">10</text>
+        <rect x="35" y="0" width="30" height="25" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="3"/>
+        <text x="50" y="17" text-anchor="middle" font-weight="bold">12</text>
+        <rect x="70" y="0" width="30" height="25" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="3"/>
+        <text x="85" y="17" text-anchor="middle" font-weight="bold">14</text>
+        <rect x="105" y="0" width="30" height="25" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="3"/>
+        <text x="120" y="17" text-anchor="middle" font-weight="bold">16</text>
+        <rect x="140" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="155" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="175" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="190" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="210" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="225" y="17" text-anchor="middle" font-weight="bold">?</text>
+      </g>
+      <text x="0" y="70" font-size="14">Answer: 18, 20, 22</text>
+    </g>
+    
+    <!-- Pattern 4: Missing numbers -->
+    <g transform="translate(450,180)">
+      <text x="0" y="0" font-size="16" font-weight="bold">Pattern 4: Missing Numbers</text>
+      <g transform="translate(0,25)">
+        <rect x="0" y="0" width="30" height="25" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="3"/>
+        <text x="15" y="17" text-anchor="middle" font-weight="bold">6</text>
+        <rect x="35" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="50" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="70" y="0" width="30" height="25" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="3"/>
+        <text x="85" y="17" text-anchor="middle" font-weight="bold">10</text>
+        <rect x="105" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="120" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="140" y="0" width="30" height="25" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="3"/>
+        <text x="155" y="17" text-anchor="middle" font-weight="bold">14</text>
+        <rect x="175" y="0" width="30" height="25" fill="#f0f0f0" stroke="#999" stroke-width="2" rx="3"/>
+        <text x="190" y="17" text-anchor="middle" font-weight="bold">?</text>
+        <rect x="210" y="0" width="30" height="25" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2" rx="3"/>
+        <text x="225" y="17" text-anchor="middle" font-weight="bold">18</text>
+      </g>
+      <text x="0" y="70" font-size="14">Answer: 8, 12, 16</text>
+    </g>
+    
+    <!-- Pattern recognition tips -->
+    <g transform="translate(200,300)">
+      <text x="0" y="0" font-size="18" font-weight="bold" text-anchor="middle">Pattern Recognition Tips</text>
+      <g transform="translate(0,30)">
+        <text x="0" y="0" font-size="14" text-anchor="middle">• Look for the difference between consecutive numbers</text>
+        <text x="0" y="25" font-size="14" text-anchor="middle">• Even numbers: difference of 2, starting from 0 or 2</text>
+        <text x="0" y="50" font-size="14" text-anchor="middle">• Odd numbers: difference of 2, starting from 1 or 3</text>
+        <text x="0" y="75" font-size="14" text-anchor="middle">• Skip counting: add 2 to each number to get the next</text>
+      </g>
+    </g>
+  </g>
+</svg>
