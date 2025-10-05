@@ -1,20 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <rect width="800" height="400" fill="#ffffff"/>
-  <text x="400" y="40" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#111">Borrowing in Binary</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#ffffff"/>
 
-  <!-- Example columns -->
-  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
-    <text x="120" y="100">Minuend</text>
-    <text x="120" y="130">1 0 1 0</text>
-    <text x="120" y="160">Subtrahend</text>
-    <text x="120" y="190">0 1 1 1</text>
-    <text x="120" y="220">Borrow →</text>
-    <text x="220" y="220">10 − 1 = 1</text>
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#0ea5e9"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Borrowing in Binary</text>
+
+  <!-- Panel -->
+  <rect x="40" y="80" width="720" height="260" rx="14" ry="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+
+  <!-- Columnar example -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#111">
+    <text x="120" y="130" fill="#334155">Minuend</text>
+    <text x="120" y="160" fill="#111">1 0 1 0</text>
+    <text x="120" y="190" fill="#334155">Subtrahend</text>
+    <text x="120" y="220" fill="#111">0 1 1 1</text>
+  </g>
+  <line x1="100" y1="235" x2="360" y2="235" stroke="#475569" stroke-width="2"/>
+
+  <!-- Borrow arrow and highlight -->
+  <g>
+    <circle cx="280" cy="205" r="14" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M460 180 L520 180 L520 165 L560 195 L520 225 L520 210 L460 210 Z" fill="#22c55e"/>
+    <text x="570" y="200" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#065f46">borrow 1 → 10₂ − 1 = 1</text>
   </g>
 
-  <line x1="100" y1="205" x2="320" y2="205" stroke="#333" stroke-width="2"/>
-  <text x="210" y="250" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="middle" fill="#111">Result bits form right to left</text>
-
-  <text x="400" y="370" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#333">Illustration of single and cascading borrows</text>
+  <!-- Note -->
+  <text x="400" y="395" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Yellow circle marks borrowed column; green arrow shows flow</text>
 </svg>
 
