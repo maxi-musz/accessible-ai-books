@@ -62,7 +62,7 @@ export default function SubjectContentsPage({
             <div 
               key={chapter.chapterNumber}
               className={`
-                w-full sm:w-auto max-w-sm print:max-w-none p-4 print:p-6 rounded-2xl print:rounded-2xl border-4 shadow-lg print:shadow-none
+                w-full sm:w-auto max-w-sm print:max-w-none p-3 print:p-5 rounded-2xl print:rounded-2xl border-4 shadow-lg print:shadow-none
                 ${index % 4 === 0 ? 'border-yellow-400 bg-yellow-50' : ''}
                 ${index % 4 === 1 ? 'border-blue-400 bg-blue-50' : ''}
                 ${index % 4 === 2 ? 'border-green-400 bg-green-50' : ''}
@@ -74,7 +74,7 @@ export default function SubjectContentsPage({
               {/* Chapter Header */}
               <div className="text-center mb-3 print:mb-4">
                 <div className={`
-                  inline-block px-3 py-1.5 print:px-4 print:py-2 rounded-lg print:rounded-lg font-bold text-base print:text-lg mb-2 print:mb-4
+                  inline-block px-2.5 py-1 print:px-4 print:py-2 rounded-lg print:rounded-lg font-bold text-sm print:text-lg mb-2 print:mb-4
                   ${index % 4 === 0 ? 'bg-yellow-400 text-yellow-900' : ''}
                   ${index % 4 === 1 ? 'bg-blue-400 text-blue-900' : ''}
                   ${index % 4 === 2 ? 'bg-green-400 text-green-900' : ''}
@@ -82,14 +82,14 @@ export default function SubjectContentsPage({
                 `}>
                   CHAPTER {chapter.chapterNumber}
                 </div>
-                <h3 className="text-base print:text-xl font-bold text-gray-800 leading-tight">
+                <h3 className="text-sm print:text-xl font-bold text-gray-800 leading-snug">
                   {chapter.title}
                 </h3>
               </div>
 
               {/* Topics List (uniform height) */}
               <div className="mb-3 print:mb-4">
-                <div className="text-[11px] print:text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 print:mb-3 text-center">
+                <div className="text-[10px] print:text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 print:mb-3 text-center">
                   Topics ({chapter.topics.length}):
                 </div>
                 <div className="space-y-2 print:space-y-2 print:grid print:grid-cols-2 print:gap-2">
@@ -105,7 +105,7 @@ export default function SubjectContentsPage({
                       rows.push(
                         <div
                           key={`t-${i}`}
-                          className="flex items-center gap-2 print:gap-2 p-2 print:p-2 bg-white rounded-lg border border-gray-200 shadow-sm min-h-[34px] print:min-h-[36px] w-full min-w-0"
+                          className="flex items-center gap-2 print:gap-2 p-2 print:p-2 bg-white rounded-lg border border-gray-200 shadow-sm min-h-[32px] print:min-h-[34px] w-full min-w-0"
                         >
                           <div
                             className={`w-5 h-5 print:w-6 print:h-6 rounded-full flex items-center justify-center text-[10px] print:text-xs font-bold text-white flex-shrink-0 ${
@@ -120,7 +120,7 @@ export default function SubjectContentsPage({
                           >
                             {i + 1}
                           </div>
-                          <div className="text-[13px] print:text-xs text-gray-700 leading-tight print:leading-snug w-full min-w-0 truncate print:whitespace-normal print:overflow-visible print:break-words">
+                          <div className="text-[12px] print:text-xs text-gray-700 leading-tight print:leading-snug w-full min-w-0 whitespace-normal break-words overflow-hidden">
                             {topic}
                           </div>
                         </div>
@@ -137,7 +137,7 @@ export default function SubjectContentsPage({
                           <div className="w-5 h-5 print:w-6 print:h-6 rounded-full flex items-center justify-center text-[10px] print:text-xs font-bold bg-gray-300 text-gray-700 flex-shrink-0">
                             …
                           </div>
-                          <div className="text-[13px] print:text-sm leading-tight">
+                          <div className="text-[12px] print:text-sm leading-tight">
                             {remaining === 1 ? '+1 more topic' : `+${remaining} more topics`}
                           </div>
                         </div>
@@ -151,7 +151,7 @@ export default function SubjectContentsPage({
                             className="flex items-center gap-2 p-2 bg-transparent rounded-lg min-h-[34px] print:min-h-[36px] invisible"
                           >
                             <div className="w-5 h-5 rounded-full" />
-                            <div className="text-[13px]">&nbsp;</div>
+                            <div className="text-[12px]">&nbsp;</div>
                           </div>
                         );
                       }

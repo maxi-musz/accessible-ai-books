@@ -156,7 +156,9 @@ export default function Sidebar() {
                                     >
                                       <div className="flex items-center gap-2">
                                         <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-                                        {chapter}
+                                        <span className="max-w-[170px] truncate whitespace-nowrap">
+                                          {chapter}
+                                        </span>
                                         <span className="ml-2 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
                                           {chapterTopics.length}
                                         </span>

@@ -1,0 +1,146 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>Compatible Numbers for Estimation</title>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Compatible Numbers: Easy Mental Math
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    Choose numbers that are easy to work with mentally
+  </text>
+  
+  <!-- Example 1: Multiplication -->
+  <text x="400" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 1: Multiplication (47 × 23)
+  </text>
+  
+  <!-- Multiplication visual -->
+  <g transform="translate(100, 110)">
+    <!-- Original problem -->
+    <rect x="0" y="0" width="600" height="120" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Original Problem
+    </text>
+    
+    <rect x="150" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="190" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">47</text>
+    
+    <text x="280" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">×</text>
+    
+    <rect x="370" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="410" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">23</text>
+    
+    <text x="500" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    
+    <rect x="520" y="40" width="80" height="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="4"/>
+    <text x="560" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">1,081</text>
+  </g>
+  
+  <!-- Compatible numbers -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="600" height="120" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Compatible Numbers (Easy to multiply)
+    </text>
+    
+    <rect x="150" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="190" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">50</text>
+    
+    <text x="280" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">×</text>
+    
+    <rect x="370" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="410" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">20</text>
+    
+    <text x="500" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    
+    <rect x="520" y="40" width="80" height="60" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="4"/>
+    <text x="560" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">1,000</text>
+  </g>
+  
+  <!-- Comparison -->
+  <text x="400" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+    <tspan x="400" dy="0">Estimate: 1,000 (compatible numbers)</tspan>
+    <tspan x="400" dy="20">Exact: 1,081</tspan>
+    <tspan x="400" dy="20" fill="#059669">Difference: 81 (excellent estimate!)</tspan>
+  </text>
+  
+  <!-- Example 2: Division -->
+  <text x="400" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 2: Division (1,247 ÷ 31)
+  </text>
+  
+  <!-- Division visual -->
+  <g transform="translate(100, 490)">
+    <!-- Original problem -->
+    <rect x="0" y="0" width="600" height="120" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Original Problem
+    </text>
+    
+    <rect x="150" y="40" width="100" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="200" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1,247</text>
+    
+    <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">÷</text>
+    
+    <rect x="370" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="410" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">31</text>
+    
+    <text x="500" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    
+    <rect x="520" y="40" width="80" height="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="4"/>
+    <text x="560" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">40.2</text>
+  </g>
+  
+  <!-- Compatible numbers for division -->
+  <g transform="translate(100, 630)">
+    <rect x="0" y="0" width="600" height="120" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Compatible Numbers (Easy to divide)
+    </text>
+    
+    <rect x="150" y="40" width="100" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="200" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">1,200</text>
+    
+    <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">÷</text>
+    
+    <rect x="370" y="40" width="80" height="60" fill="white" stroke="#d1d5db" stroke-width="2" rx="4"/>
+    <text x="410" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">30</text>
+    
+    <text x="500" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    
+    <rect x="520" y="40" width="80" height="60" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="4"/>
+    <text x="560" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">40</text>
+  </g>
+  
+  <!-- Comparison -->
+  <text x="400" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+    <tspan x="400" dy="0">Estimate: 40 (compatible numbers)</tspan>
+    <tspan x="400" dy="20">Exact: 40.2</tspan>
+    <tspan x="400" dy="20" fill="#059669">Difference: 0.2 (excellent estimate!)</tspan>
+  </text>
+  
+  <!-- Tips box -->
+  <g transform="translate(50, 850)">
+    <rect x="0" y="0" width="700" height="80" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      Compatible Number Tips
+    </text>
+    
+    <text x="350" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+      • Round to numbers that divide evenly (multiples of 10, 25, 50, 100)
+    </text>
+    <text x="350" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+      • Look for numbers that make mental math easier
+    </text>
+  </g>
+</svg>

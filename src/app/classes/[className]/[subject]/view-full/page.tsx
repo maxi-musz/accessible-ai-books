@@ -108,16 +108,49 @@ export default async function ViewFullSubjectPage({ params, searchParams }: Page
         },
         {
           chapterNumber: 2,
+          title: 'Basic Operations',
+          topics: [
+            'Addition and Subtraction',
+            'Addition and Subtraction of fractions',
+            'Multiplication and Division of Fractions',
+            'Estimation',
+            'Approximation',
+            'Addition of numbers in base 2.',
+            'Subtraction of numbers in base 2.',
+            'Multiplication of numbers in base 2.',
+            'Use of Symbols',
+            'Use of Symbols (contd.)'
+          ],
+          pages: '25'
+        },
+        {
+          chapterNumber: 3,
           title: 'Algebraic Processes',
           topics: [
-            'Introduction to Algebra',
-            'Simple Equations',
-            'Variables and Constants',
-            'Algebraic Expressions',
-            'Substitution',
-            'Basic Word Problems'
+            'Simplification of Algebraic Expressions',
+            'Simple Equations'
           ],
-          pages: '18'
+          pages: '12'
+        },
+        {
+          chapterNumber: 4,
+          title: 'Mensuration and Geometry',
+          topics: [
+            'Plane Shapes',
+            'Three dimensional Figures',
+            'Construction',
+            'Angles'
+          ],
+          pages: '16'
+        },
+        {
+          chapterNumber: 5,
+          title: 'Everyday Statistics',
+          topics: [
+            'Needs for statistics',
+            'Data representation'
+          ],
+          pages: '10'
         }
       ]
     }

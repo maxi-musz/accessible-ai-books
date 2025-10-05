@@ -104,6 +104,7 @@
 - Use the `image` block in topic pages:
   - `{ type: 'image', src: '/images/path.png', alt: 'desc', caption: 'caption', width: 720, style: 'inline' }`
 - Web shows compact images; PDF renders full width by default. Ensure alt/captions are meaningful.
+- CRITICAL rule: Text and shapes/images must NEVER overlap (web or PDF). Always leave adequate padding/margins so labels, captions, arrows, and shapes do not touch or cover one another.
 
 ### Asset Structure for Generated SVG/PNG
 - `public/images/svg/{class}/{subject}/{chapter-slug}/topic-{n}/...`
@@ -117,6 +118,8 @@
 4. Keep canvas white; avoid drop shadows in SVG for clean print.
 5. Prefer vectors (SVG) for math diagrams; set widths in the `image` block.
  6. PDF-first: ensure visuals scale nicely to page width; test export after adding.
+ 7. No overlap, ever: add internal padding around diagrams; leave clear space between labels and strokes; avoid placing text directly on lines unless there is a solid contrasting background.
+ 8. Use `viewBox` with generous margins and keep key elements within a visual safe-area; verify in both dark-on-light web view and print.
 
 ## Curriculum Tracking
 
