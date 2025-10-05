@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#0ea5e9"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Shift-and-Add (Partial Products)</text>
+
+  <!-- Panel -->
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+
+  <!-- Illustration -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <text x="90" y="140" fill="#334155">Multiplicand</text>
+    <text x="230" y="140">1 0 1 1</text>
+
+    <text x="90" y="175" fill="#334155">Multiplier</text>
+    <text x="230" y="175">1 1 0</text>
+
+    <text x="90" y="210" fill="#065f46">Partial products</text>
+    <text x="230" y="210">1 0 1 1</text>
+    <text x="230" y="240">1 0 1 1 0</text>
+    <text x="230" y="270" fill="#9ca3af">0 0 0 0 0</text>
+  </g>
+
+  <!-- Sum line -->
+  <line x1="220" y1="285" x2="560" y2="285" stroke="#475569" stroke-width="2"/>
+  <text x="230" y="315" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">Add partial products → product</text>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Shift left for each position of 1 in the multiplier; add results</text>
+</svg>
+

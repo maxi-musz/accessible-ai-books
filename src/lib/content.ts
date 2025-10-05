@@ -23,6 +23,7 @@ import jss1Estimation from "@/content/data/jss-1/mathematics/basic-operations/to
 import jss1Approximation from "@/content/data/jss-1/mathematics/basic-operations/topic-5-approximation";
 import jss1AdditionBase2 from "@/content/data/jss-1/mathematics/basic-operations/topic-6-addition-base2";
 import jss1SubtractionBase2 from "../content/data/jss-1/mathematics/basic-operations/topic-7-subtraction-base2";
+import jss1MultiplicationBase2 from "../content/data/jss-1/mathematics/basic-operations/topic-8-multiplication-base2";
 
 import { ClassRegistry, Topic } from "@/content/schema";
 
@@ -60,7 +61,7 @@ const registry: ClassRegistry = {
             { ...jss1Approximation, completed: false, chapter: "Basic Operations" },
             { ...jss1AdditionBase2, completed: true, chapter: "Basic Operations" },
             { ...jss1SubtractionBase2, completed: false, chapter: "Basic Operations" },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "multiplication-in-base-2", title: "Multiplication of numbers in base 2.", order: 14, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1MultiplicationBase2, completed: false, chapter: "Basic Operations" },
             { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols", title: "Use of Symbols", order: 15, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
             { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols-continued", title: "Use of Symbols (contd.)", order: 16, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
           ],
