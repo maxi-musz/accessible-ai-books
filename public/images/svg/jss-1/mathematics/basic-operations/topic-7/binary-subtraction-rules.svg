@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="50" font-family="Arial, Helvetica, sans-serif" font-size="24" text-anchor="middle" fill="#111">Binary Subtraction Rules</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <text x="100" y="120">1 − 0 = 1</text>
+    <text x="100" y="160">1 − 1 = 0</text>
+    <text x="100" y="200">0 − 0 = 0</text>
+    <text x="100" y="240">0 − 1 = 1 with borrow (10₂ − 1 = 1)</text>
+  </g>
+  <text x="400" y="370" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#333">Rules summary for quick reference</text>
+</svg>
+

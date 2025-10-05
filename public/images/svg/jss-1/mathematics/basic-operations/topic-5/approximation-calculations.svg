@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Approximation in Calculations</title>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Approximation in Calculations
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    How approximation affects calculation results
+  </text>
+  
+  <!-- Example 1: Area calculation -->
+  <text x="400" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 1: Area of Rectangle with Approximate Dimensions
+  </text>
+  
+  <!-- Original measurements -->
+  <g transform="translate(100, 110)">
+    <rect x="0" y="0" width="600" height="100" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Original Measurements (from ruler)
+    </text>
+    
+    <text x="200" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">Length: 3.247 m</text>
+    <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">Width: 4.183 m</text>
+  </g>
+  
+  <!-- Approximation step -->
+  <g transform="translate(100, 230)">
+    <rect x="0" y="0" width="600" height="100" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      Approximate to 2 decimal places
+    </text>
+    
+    <text x="200" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">Length: 3.25 m</text>
+    <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">Width: 4.18 m</text>
+    
+    <text x="300" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+      (7 ≥ 5, so round up) &amp; (3 &lt; 5, so round down)
+    </text>
+  </g>
+  
+  <!-- Calculation -->
+  <g transform="translate(100, 350)">
+    <rect x="0" y="0" width="600" height="100" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Area Calculation
+    </text>
+    
+    <text x="200" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">3.25 × 4.18</text>
+    <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    <text x="500" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">13.585 m²</text>
+    
+    <text x="300" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+      Final answer: 13.59 m² (rounded to 2 decimal places)
+    </text>
+  </g>
+  
+  <!-- Example 2: Speed calculation -->
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 2: Speed Calculation with Approximate Time
+  </text>
+  
+  <!-- Speed calculation -->
+  <g transform="translate(100, 500)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Speed = Distance ÷ Time
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">100 m</text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">÷</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">12.3 s</text>
+    <text x="600" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">=</text>
+    
+    <text x="650" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">8.13 m/s</text>
+  </g>
+  
+  <!-- Guidelines box -->
+  <g transform="translate(50, 600)">
+    <rect x="0" y="0" width="700" height="60" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="8"/>
+    
+    <text x="350" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+      Guidelines for Approximation in Calculations
+    </text>
+    
+    <text x="350" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0c4a6e">
+      • Keep extra digits during intermediate calculations
+    </text>
+    <text x="350" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0c4a6e">
+      • Round final answer to appropriate precision
+    </text>
+  </g>
+</svg>

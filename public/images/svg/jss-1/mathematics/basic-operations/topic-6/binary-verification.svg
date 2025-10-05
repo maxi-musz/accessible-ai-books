@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Binary Addition Verification</title>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Verifying Binary Addition with Decimal Conversion
+  </text>
+  
+  <!-- Problem statement -->
+  <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Problem: 1101₂ + 1011₂ = 11000₂
+  </text>
+  
+  <!-- Conversion table -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="600" height="300" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Convert Each Number to Decimal
+    </text>
+    
+    <!-- First number: 1101 -->
+    <g transform="translate(50, 50)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">1101₂ =</text>
+      
+      <!-- Place values -->
+      <g font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+        <text x="0" y="40">1×2³ + 1×2² + 0×2¹ + 1×2⁰</text>
+        <text x="0" y="60">= 1×8 + 1×4 + 0×2 + 1×1</text>
+        <text x="0" y="80">= 8 + 4 + 0 + 1</text>
+        <text x="0" y="100" font-weight="bold" fill="#059669">= 13₁₀</text>
+      </g>
+    </g>
+    
+    <!-- Second number: 1011 -->
+    <g transform="translate(350, 50)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">1011₂ =</text>
+      
+      <!-- Place values -->
+      <g font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+        <text x="0" y="40">1×2³ + 0×2² + 1×2¹ + 1×2⁰</text>
+        <text x="0" y="60">= 1×8 + 0×4 + 1×2 + 1×1</text>
+        <text x="0" y="80">= 8 + 0 + 2 + 1</text>
+        <text x="0" y="100" font-weight="bold" fill="#059669">= 11₁₀</text>
+      </g>
+    </g>
+    
+    <!-- Result: 11000 -->
+    <g transform="translate(200, 150)">
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">11000₂ =</text>
+      
+      <!-- Place values -->
+      <g font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+        <text x="0" y="40">1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 0×2⁰</text>
+        <text x="0" y="60">= 1×16 + 1×8 + 0×4 + 0×2 + 0×1</text>
+        <text x="0" y="80">= 16 + 8 + 0 + 0 + 0</text>
+        <text x="0" y="100" font-weight="bold" fill="#059669">= 24₁₀</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Verification -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="600" height="100" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Verification Check
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      13₁₀ + 11₁₀ = 24₁₀
+    </text>
+    
+    <text x="300" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">
+      ✓ Binary addition is correct!
+    </text>
+    
+    <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+      Always verify binary arithmetic by converting to decimal
+    </text>
+  </g>
+  
+  <!-- Tips -->
+  <g transform="translate(100, 540)">
+    <rect x="0" y="0" width="600" height="50" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      Tip: Use decimal conversion as a double-check for all binary operations
+    </text>
+    
+    <text x="300" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+      This helps catch errors and builds confidence in binary arithmetic
+    </text>
+  </g>
+</svg>

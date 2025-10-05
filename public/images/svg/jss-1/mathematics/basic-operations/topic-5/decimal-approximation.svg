@@ -1,0 +1,128 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>Decimal Place Approximation</title>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Decimal Place Approximation: Step by Step
+  </text>
+  
+  <!-- Example 1: π to 2 decimal places -->
+  <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 1: Approximate π (3.14159265359...) to 2 decimal places
+  </text>
+  
+  <!-- Original number display -->
+  <g transform="translate(100, 90)">
+    <rect x="0" y="0" width="600" height="80" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Original Number
+    </text>
+    
+    <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
+      3.14159265359...
+    </text>
+  </g>
+  
+  <!-- Decimal places breakdown -->
+  <g transform="translate(100, 190)">
+    <rect x="0" y="0" width="600" height="120" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      Decimal Places Breakdown
+    </text>
+    
+    <!-- Place value labels -->
+    <g font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+      <text x="100" y="50" text-anchor="middle">Units</text>
+      <text x="150" y="50" text-anchor="middle">Tenths</text>
+      <text x="200" y="50" text-anchor="middle">Hundredths</text>
+      <text x="250" y="50" text-anchor="middle">Thousandths</text>
+      <text x="300" y="50" text-anchor="middle">Ten-thousandths</text>
+      <text x="350" y="50" text-anchor="middle">Hundred-thousandths</text>
+    </g>
+    
+    <!-- Digits -->
+    <g font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+      <text x="100" y="75" text-anchor="middle" fill="#1f2937">3</text>
+      <text x="150" y="75" text-anchor="middle" fill="#1f2937">1</text>
+      <text x="200" y="75" text-anchor="middle" fill="#dc2626">4</text>
+      <text x="250" y="75" text-anchor="middle" fill="#059669">1</text>
+      <text x="300" y="75" text-anchor="middle" fill="#6b7280">5</text>
+      <text x="350" y="75" text-anchor="middle" fill="#6b7280">9</text>
+    </g>
+    
+    <!-- Highlighting -->
+    <rect x="190" y="85" width="20" height="20" fill="#dc2626" opacity="0.2" rx="2"/>
+    <rect x="240" y="85" width="20" height="20" fill="#059669" opacity="0.2" rx="2"/>
+    
+    <text x="300" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+      Round to 2 decimal places (look at 3rd decimal place: 1)
+    </text>
+  </g>
+  
+  <!-- Decision and result -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Decision and Result
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      3rd decimal place = 1 (1 &lt; 5, so round down)
+    </text>
+    
+    <text x="300" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">
+      3.14159265359... ≈ 3.14
+    </text>
+  </g>
+  
+  <!-- Example 2: e to 3 decimal places -->
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example 2: Approximate e (2.718281828...) to 3 decimal places
+  </text>
+  
+  <!-- Second example -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="600" height="120" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      Decimal Places Breakdown
+    </text>
+    
+    <!-- Digits for e -->
+    <g font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+      <text x="100" y="55" text-anchor="middle" fill="#1f2937">2</text>
+      <text x="150" y="55" text-anchor="middle" fill="#1f2937">7</text>
+      <text x="200" y="55" text-anchor="middle" fill="#1f2937">1</text>
+      <text x="250" y="55" text-anchor="middle" fill="#dc2626">8</text>
+      <text x="300" y="55" text-anchor="middle" fill="#059669">2</text>
+      <text x="350" y="55" text-anchor="middle" fill="#6b7280">8</text>
+    </g>
+    
+    <!-- Highlighting -->
+    <rect x="240" y="65" width="20" height="20" fill="#dc2626" opacity="0.2" rx="2"/>
+    <rect x="290" y="65" width="20" height="20" fill="#059669" opacity="0.2" rx="2"/>
+    
+    <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+      Round to 3 decimal places (look at 4th decimal place: 2)
+    </text>
+  </g>
+  
+  <!-- Decision and result for e -->
+  <g transform="translate(100, 610)">
+    <rect x="0" y="0" width="600" height="60" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      4th decimal place = 2 (2 &lt; 5, so round down)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">
+      2.718281828... ≈ 2.718
+    </text>
+  </g>
+</svg>

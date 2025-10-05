@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="40" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#111">Verification of Binary Subtraction</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <text x="100" y="120">Binary:</text>
+    <text x="200" y="120">11010 − 10101 = 00101</text>
+    <text x="100" y="160">Check by addition:</text>
+    <text x="280" y="160">10101 + 00101 = 11010 ✓</text>
+    <text x="100" y="200">Decimal:</text>
+    <text x="200" y="200">26 − 21 = 5 ✓</text>
+  </g>
+  <text x="400" y="370" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#333">Add back the difference to confirm the minuend</text>
+</svg>
+

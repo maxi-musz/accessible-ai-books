@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>Binary Place Values and Decimal Conversion</title>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Binary Place Values and Decimal Conversion
+  </text>
+  
+  <!-- Binary number example -->
+  <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Example: Convert 1011₂ to decimal
+  </text>
+  
+  <!-- Binary place value chart -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="600" height="200" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Binary Place Value Chart
+    </text>
+    
+    <!-- Position labels -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+      <text x="100" y="55" text-anchor="middle">Position 3</text>
+      <text x="200" y="55" text-anchor="middle">Position 2</text>
+      <text x="300" y="55" text-anchor="middle">Position 1</text>
+      <text x="400" y="55" text-anchor="middle">Position 0</text>
+    </g>
+    
+    <!-- Place values -->
+    <g font-family="Arial, sans-serif" font-size="12" fill="#059669">
+      <text x="100" y="75" text-anchor="middle">2³ = 8</text>
+      <text x="200" y="75" text-anchor="middle">2² = 4</text>
+      <text x="300" y="75" text-anchor="middle">2¹ = 2</text>
+      <text x="400" y="75" text-anchor="middle">2⁰ = 1</text>
+    </g>
+    
+    <!-- Binary digits -->
+    <g font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
+      <text x="100" y="105" text-anchor="middle">1</text>
+      <text x="200" y="105" text-anchor="middle">0</text>
+      <text x="300" y="105" text-anchor="middle">1</text>
+      <text x="400" y="105" text-anchor="middle">1</text>
+    </g>
+    
+    <!-- Calculation -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      <text x="100" y="130" text-anchor="middle">1 × 8</text>
+      <text x="200" y="130" text-anchor="middle">0 × 4</text>
+      <text x="300" y="130" text-anchor="middle">1 × 2</text>
+      <text x="400" y="130" text-anchor="middle">1 × 1</text>
+    </g>
+    
+    <!-- Results -->
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#059669">
+      <text x="100" y="155" text-anchor="middle">= 8</text>
+      <text x="200" y="155" text-anchor="middle">= 0</text>
+      <text x="300" y="155" text-anchor="middle">= 2</text>
+      <text x="400" y="155" text-anchor="middle">= 1</text>
+    </g>
+    
+    <!-- Sum -->
+    <text x="300" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+      8 + 0 + 2 + 1 = 11₁₀
+    </text>
+  </g>
+  
+  <!-- General rule -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="600" height="120" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+      General Rule for Binary to Decimal
+    </text>
+    
+    <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      Each binary digit is multiplied by its place value (power of 2)
+    </text>
+    
+    <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      Starting from the right: 2⁰, 2¹, 2², 2³, 2⁴, ...
+    </text>
+    
+    <text x="300" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      Add all the results to get the decimal equivalent
+    </text>
+  </g>
+  
+  <!-- More examples -->
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    More Examples
+  </text>
+  
+  <g transform="translate(100, 510)">
+    <rect x="0" y="0" width="600" height="60" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="8"/>
+    
+    <g font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      <text x="100" y="25" text-anchor="middle">110₂ = 6₁₀</text>
+      <text x="300" y="25" text-anchor="middle">1000₂ = 8₁₀</text>
+      <text x="500" y="25" text-anchor="middle">1111₂ = 15₁₀</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="40" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#111">Borrowing in Binary</text>
+
+  <!-- Example columns -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <text x="120" y="100">Minuend</text>
+    <text x="120" y="130">1 0 1 0</text>
+    <text x="120" y="160">Subtrahend</text>
+    <text x="120" y="190">0 1 1 1</text>
+    <text x="120" y="220">Borrow →</text>
+    <text x="220" y="220">10 − 1 = 1</text>
+  </g>
+
+  <line x1="100" y1="205" x2="320" y2="205" stroke="#333" stroke-width="2"/>
+  <text x="210" y="250" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="middle" fill="#111">Result bits form right to left</text>
+
+  <text x="400" y="370" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#333">Illustration of single and cascading borrows</text>
+</svg>
+

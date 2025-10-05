@@ -20,6 +20,9 @@ import jss1AdditionAndSubtraction from "@/content/data/jss-1/mathematics/basic-o
 import jss1AddSubFractions from "@/content/data/jss-1/mathematics/basic-operations/topic-2-add-subtract-fractions";
 import jss1MulDivFractions from "@/content/data/jss-1/mathematics/basic-operations/topic-3-multiply-divide-fractions";
 import jss1Estimation from "@/content/data/jss-1/mathematics/basic-operations/topic-4-estimation";
+import jss1Approximation from "@/content/data/jss-1/mathematics/basic-operations/topic-5-approximation";
+import jss1AdditionBase2 from "@/content/data/jss-1/mathematics/basic-operations/topic-6-addition-base2";
+import jss1SubtractionBase2 from "../content/data/jss-1/mathematics/basic-operations/topic-7-subtraction-base2";
 
 import { ClassRegistry, Topic } from "@/content/schema";
 
@@ -54,9 +57,9 @@ const registry: ClassRegistry = {
             { ...jss1AddSubFractions, completed: false, chapter: "Basic Operations" },
             { ...jss1MulDivFractions, completed: false, chapter: "Basic Operations" },
             { ...jss1Estimation, completed: false, chapter: "Basic Operations" },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "approximation", title: "Approximation", order: 11, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "addition-in-base-2", title: "Addition of numbers in base 2.", order: 12, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "subtraction-in-base-2", title: "Subtraction of numbers in base 2.", order: 13, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1Approximation, completed: false, chapter: "Basic Operations" },
+            { ...jss1AdditionBase2, completed: true, chapter: "Basic Operations" },
+            { ...jss1SubtractionBase2, completed: false, chapter: "Basic Operations" },
             { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "multiplication-in-base-2", title: "Multiplication of numbers in base 2.", order: 14, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
             { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols", title: "Use of Symbols", order: 15, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
             { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols-continued", title: "Use of Symbols (contd.)", order: 16, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },

@@ -1,0 +1,142 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Binary Addition Rules</title>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    The Four Binary Addition Rules
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    These are the only combinations possible when adding two binary digits
+  </text>
+  
+  <!-- Rule 1: 0 + 0 = 0 -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="150" height="120" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Rule 1
+    </text>
+    
+    <text x="75" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      0 + 0
+    </text>
+    
+    <text x="75" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">
+      =
+    </text>
+    
+    <text x="75" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      0
+    </text>
+  </g>
+  
+  <!-- Rule 2: 0 + 1 = 1 -->
+  <g transform="translate(220, 80)">
+    <rect x="0" y="0" width="150" height="120" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Rule 2
+    </text>
+    
+    <text x="75" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      0 + 1
+    </text>
+    
+    <text x="75" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">
+      =
+    </text>
+    
+    <text x="75" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      1
+    </text>
+  </g>
+  
+  <!-- Rule 3: 1 + 0 = 1 -->
+  <g transform="translate(390, 80)">
+    <rect x="0" y="0" width="150" height="120" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Rule 3
+    </text>
+    
+    <text x="75" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      1 + 0
+    </text>
+    
+    <text x="75" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">
+      =
+    </text>
+    
+    <text x="75" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#059669">
+      1
+    </text>
+  </g>
+  
+  <!-- Rule 4: 1 + 1 = 10 -->
+  <g transform="translate(560, 80)">
+    <rect x="0" y="0" width="150" height="120" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Rule 4
+    </text>
+    
+    <text x="75" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#dc2626">
+      1 + 1
+    </text>
+    
+    <text x="75" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#374151">
+      =
+    </text>
+    
+    <text x="75" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#dc2626">
+      10
+    </text>
+  </g>
+  
+  <!-- Special note about Rule 4 -->
+  <g transform="translate(100, 220)">
+    <rect x="0" y="0" width="600" height="80" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+      Important: Rule 4 (1 + 1 = 10)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      This is the key difference from decimal addition
+    </text>
+    
+    <text x="300" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      Write 0, carry 1 to the next column
+    </text>
+  </g>
+  
+  <!-- Decimal comparison -->
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Decimal vs Binary Addition
+  </text>
+  
+  <g transform="translate(100, 360)">
+    <rect x="0" y="0" width="600" height="100" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Decimal: 1 + 1 = 2 (single digit)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Binary: 1 + 1 = 10 (two digits, carry required)
+    </text>
+    
+    <text x="300" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      In binary, we only have digits 0 and 1, so 2 must be written as 10
+    </text>
+    
+    <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">
+      This creates the need for carry operations
+    </text>
+  </g>
+</svg>

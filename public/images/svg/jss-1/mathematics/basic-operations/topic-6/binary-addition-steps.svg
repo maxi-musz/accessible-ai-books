@@ -1,0 +1,147 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <title>Complete Binary Addition Process</title>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Complete Binary Addition: 1101 + 1011
+  </text>
+  
+  <!-- Setup -->
+  <g transform="translate(100, 60)">
+    <rect x="0" y="0" width="600" height="80" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Problem Setup
+    </text>
+    
+    <!-- Column headers -->
+    <g font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+      <text x="100" y="50" text-anchor="middle">2³</text>
+      <text x="200" y="50" text-anchor="middle">2²</text>
+      <text x="300" y="50" text-anchor="middle">2¹</text>
+      <text x="400" y="50" text-anchor="middle">2⁰</text>
+    </g>
+    
+    <!-- Numbers -->
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+    <text x="200" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+    <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">0</text>
+    <text x="400" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+    
+    <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+    <text x="200" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">0</text>
+    <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+    <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">1</text>
+  </g>
+  
+  <!-- Step 1 -->
+  <g transform="translate(100, 160)">
+    <rect x="0" y="0" width="600" height="100" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Step 1: Add rightmost column (2⁰ position)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+      1 + 1 = 10 (write 0, carry 1)
+    </text>
+    
+    <!-- Result so far -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+      <text x="100" y="70" text-anchor="middle">Carry: 1</text>
+      <text x="400" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+    </g>
+  </g>
+  
+  <!-- Step 2 -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="600" height="100" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Step 2: Add 2¹ position (include carry)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+      0 + 1 + 1 = 10 (write 0, carry 1)
+    </text>
+    
+    <!-- Result so far -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+      <text x="100" y="70" text-anchor="middle">Carry: 1</text>
+      <text x="300" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+      <text x="400" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+    </g>
+  </g>
+  
+  <!-- Step 3 -->
+  <g transform="translate(100, 400)">
+    <rect x="0" y="0" width="600" height="100" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Step 3: Add 2² position (include carry)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+      1 + 0 + 1 = 10 (write 0, carry 1)
+    </text>
+    
+    <!-- Result so far -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+      <text x="100" y="70" text-anchor="middle">Carry: 1</text>
+      <text x="200" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+      <text x="300" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+      <text x="400" y="70" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+    </g>
+  </g>
+  
+  <!-- Step 4 -->
+  <g transform="translate(100, 520)">
+    <rect x="0" y="0" width="600" height="100" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Step 4: Add 2³ position (include carry)
+    </text>
+    
+    <text x="300" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+      1 + 1 + 1 = 11 (write 1, carry 1)
+    </text>
+    
+    <!-- Final result -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+      <text x="100" y="70" text-anchor="middle">Carry: 1</text>
+      <text x="100" y="85" text-anchor="middle" font-weight="bold" fill="#059669">1</text>
+      <text x="200" y="85" text-anchor="middle" font-weight="bold" fill="#059669">1</text>
+      <text x="300" y="85" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+      <text x="400" y="85" text-anchor="middle" font-weight="bold" fill="#059669">0</text>
+    </g>
+  </g>
+  
+  <!-- Final answer -->
+  <g transform="translate(100, 640)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+      Final Answer
+    </text>
+    
+    <text x="300" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#059669">
+      1101₂ + 1011₂ = 11000₂
+    </text>
+  </g>
+  
+  <!-- Verification -->
+  <g transform="translate(100, 740)">
+    <rect x="0" y="0" width="600" height="50" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+      Verification: 13₁₀ + 11₁₀ = 24₁₀ ✓
+    </text>
+    
+    <text x="300" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0c4a6e">
+      (1101₂ = 13₁₀, 1011₂ = 11₁₀, 11000₂ = 24₁₀)
+    </text>
+  </g>
+</svg>

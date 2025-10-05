@@ -1,0 +1,119 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <title>Understanding Significant Figures</title>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">
+    Significant Figures: Which Digits Count?
+  </text>
+  
+  <!-- Rules -->
+  <text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">
+    Significant figures carry meaning about precision
+  </text>
+  
+  <!-- Rule 1: Non-zero digits -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Rule 1: All non-zero digits are significant
+  </text>
+  
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Examples
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">123</text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">→</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">3 significant figures</text>
+  </g>
+  
+  <!-- Rule 2: Zeros between non-zero digits -->
+  <text x="400" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Rule 2: Zeros between non-zero digits are significant
+  </text>
+  
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Examples
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">102</text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">→</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">3 significant figures</text>
+  </g>
+  
+  <!-- Rule 3: Leading zeros -->
+  <text x="400" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Rule 3: Leading zeros are NOT significant
+  </text>
+  
+  <g transform="translate(100, 380)">
+    <rect x="0" y="0" width="600" height="80" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Examples
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+      <tspan fill="#dc2626">0.0</tspan><tspan fill="#059669">123</tspan>
+    </text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">→</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">3 significant figures</text>
+  </g>
+  
+  <!-- Rule 4: Trailing zeros -->
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Rule 4: Trailing zeros after decimal point are significant
+  </text>
+  
+  <g transform="translate(100, 510)">
+    <rect x="0" y="0" width="600" height="80" fill="#f0fdf4" stroke="#86efac" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Examples
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+      <tspan fill="#059669">12.30</tspan>
+    </text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">→</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">4 significant figures</text>
+  </g>
+  
+  <!-- Special case: 1000 -->
+  <text x="400" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">
+    Special Case: 1000 has 1 significant figure (unless specified otherwise)
+  </text>
+  
+  <g transform="translate(100, 640)">
+    <rect x="0" y="0" width="600" height="80" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    
+    <text x="300" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">
+      Example
+    </text>
+    
+    <text x="150" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+      <tspan fill="#059669">1</tspan><tspan fill="#dc2626">000</tspan>
+    </text>
+    <text x="300" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">→</text>
+    <text x="450" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">1 significant figure</text>
+  </g>
+  
+  <!-- Summary -->
+  <g transform="translate(50, 750)">
+    <rect x="0" y="0" width="700" height="40" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2" rx="8"/>
+    
+    <text x="350" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">
+      Remember: Significant figures tell us about the precision of a measurement
+    </text>
+    <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0c4a6e">
+      More significant figures = more precise measurement
+    </text>
+  </g>
+</svg>
