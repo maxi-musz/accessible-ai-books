@@ -24,6 +24,10 @@ import jss1Approximation from "@/content/data/jss-1/mathematics/basic-operations
 import jss1AdditionBase2 from "@/content/data/jss-1/mathematics/basic-operations/topic-6-addition-base2";
 import jss1SubtractionBase2 from "../content/data/jss-1/mathematics/basic-operations/topic-7-subtraction-base2";
 import jss1MultiplicationBase2 from "../content/data/jss-1/mathematics/basic-operations/topic-8-multiplication-base2";
+import jss1UseOfSymbols from "../content/data/jss-1/mathematics/basic-operations/topic-9-use-of-symbols";
+import jss1UseOfSymbolsContd from "../content/data/jss-1/mathematics/basic-operations/topic-10-use-of-symbols-continued";
+import jss1AlgSimplification from "../content/data/jss-1/mathematics/algebraic-processes/topic-1-simplification";
+import jss1SimpleEquations from "../content/data/jss-1/mathematics/algebraic-processes/topic-2-simple-equations";
 
 import { ClassRegistry, Topic } from "@/content/schema";
 
@@ -62,12 +66,12 @@ const registry: ClassRegistry = {
             { ...jss1AdditionBase2, completed: true, chapter: "Basic Operations" },
             { ...jss1SubtractionBase2, completed: false, chapter: "Basic Operations" },
             { ...jss1MultiplicationBase2, completed: false, chapter: "Basic Operations" },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols", title: "Use of Symbols", order: 15, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Basic Operations", slug: "use-of-symbols-continued", title: "Use of Symbols (contd.)", order: 16, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1UseOfSymbols, completed: false, chapter: "Basic Operations" },
+            { ...jss1UseOfSymbolsContd, completed: false, chapter: "Basic Operations" },
           ],
           "Algebraic Processes": [
-            { class: "JSS 1", subject: "Mathematics", chapter: "Algebraic Processes", slug: "simplification-of-algebraic-expressions", title: "Simplification of Algebraic Expressions", order: 17, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Algebraic Processes", slug: "simple-equations", title: "Simple Equations", order: 18, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1AlgSimplification, completed: false, chapter: "Algebraic Processes" },
+            { ...jss1SimpleEquations, completed: false, chapter: "Algebraic Processes" },
           ],
           "Mensuration and Geometry": [
             { class: "JSS 1", subject: "Mathematics", chapter: "Mensuration and Geometry", slug: "plane-shapes", title: "Plane Shapes", order: 19, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },

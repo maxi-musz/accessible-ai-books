@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430">
+  <rect width="800" height="430" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#0ea5e9"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Open Sentences (True/False)</text>
+
+  <rect x="60" y="90" width="680" height="270" rx="14" ry="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    <text x="90" y="140">n + 5 = 12</text>
+    <text x="300" y="140" fill="#16a34a">n = 7 → true</text>
+
+    <text x="90" y="185">3m &lt; 15</text>
+    <text x="300" y="185" fill="#ef4444">m = 5 → false</text>
+    <text x="300" y="210" fill="#16a34a">m = 4 → true</text>
+  </g>
+
+  <text x="400" y="410" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Test values by substitution; label truth clearly with color and spacing</text>
+</svg>
+
