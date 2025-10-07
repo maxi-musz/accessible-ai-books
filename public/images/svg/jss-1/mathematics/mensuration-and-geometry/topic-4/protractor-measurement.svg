@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#0ea5e9"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Measuring Angles with Protractor</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+
+  <!-- Protractor semicircle -->
+  <g fill="none" stroke="#2563eb" stroke-width="2">
+    <path d="M200,250 A100,100 0 0 1 400,250"/>
+    <line x1="200" y1="250" x2="400" y2="250"/>
+  </g>
+
+  <!-- Angle to measure -->
+  <g stroke="#ef4444" stroke-width="3" fill="none">
+    <line x1="300" y1="250" x2="300" y2="200"/>
+    <line x1="300" y1="250" x2="350" y2="250"/>
+  </g>
+
+  <!-- Measurement arc -->
+  <path d="M300,250 A50,50 0 0 1 350,250" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111">
+    <text x="300" y="190" text-anchor="middle" fill="#ef4444">Arm 1</text>
+    <text x="375" y="270" text-anchor="middle" fill="#ef4444">Arm 2</text>
+    <text x="325" y="230" text-anchor="middle" fill="#16a34a">90°</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Align protractor center with vertex; read scale where second arm crosses</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#1e3a8a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Common Plane Shapes</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#eef2ff" stroke="#4338ca" stroke-width="2"/>
+
+  <!-- Shapes -->
+  <g fill="none" stroke-width="3">
+    <polygon points="160,180 120,260 200,260" stroke="#ef4444"/>
+    <rect x="260" y="200" width="100" height="100" stroke="#16a34a"/>
+    <rect x="400" y="200" width="140" height="100" stroke="#2563eb"/>
+    <circle cx="640" cy="250" r="50" stroke="#f59e0b"/>
+  </g>
+
+  <!-- Labels -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111">
+    <text x="150" y="290" text-anchor="middle">Triangle</text>
+    <text x="310" y="320" text-anchor="middle">Square</text>
+    <text x="470" y="320" text-anchor="middle">Rectangle</text>
+    <text x="640" y="320" text-anchor="middle">Circle</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">High contrast strokes; spacing prevents any overlap in print</text>
+</svg>
+

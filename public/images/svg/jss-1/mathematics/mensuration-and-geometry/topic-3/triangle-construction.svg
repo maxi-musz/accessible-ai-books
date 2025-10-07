@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#16a34a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Triangle Construction (SSS)</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Base AB -->
+  <g stroke="#111" stroke-width="3" fill="none">
+    <line x1="140" y1="320" x2="520" y2="320"/>
+    <circle cx="140" cy="320" r="4" fill="#111"/>
+    <circle cx="520" cy="320" r="4" fill="#111"/>
+    <text x="140" y="340" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#111">A</text>
+    <text x="520" y="340" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#111">B</text>
+  </g>
+
+  <!-- Arcs for AC and BC -->
+  <g fill="none" stroke="#2563eb" stroke-width="2">
+    <path d="M140,320 A160,160 0 0 1 360,200"/>
+  </g>
+  <g fill="none" stroke="#ef4444" stroke-width="2">
+    <path d="M520,320 A120,120 0 0 0 360,200"/>
+  </g>
+
+  <!-- Vertex C and triangle -->
+  <g stroke="#10b981" stroke-width="3" fill="none">
+    <circle cx="360" cy="200" r="4" fill="#10b981"/>
+    <line x1="140" y1="320" x2="360" y2="200"/>
+    <line x1="520" y1="320" x2="360" y2="200"/>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Set radii to AC and BC; mark intersection for vertex C; join to A and B</text>
+</svg>
+

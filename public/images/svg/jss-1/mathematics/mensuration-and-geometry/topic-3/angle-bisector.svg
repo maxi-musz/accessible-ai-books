@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#7c3aed"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Angle Bisector</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+
+  <!-- Angle at O -->
+  <g stroke="#111" stroke-width="3" fill="none">
+    <line x1="200" y1="320" x2="400" y2="280"/>
+    <line x1="200" y1="320" x2="300" y2="160"/>
+    <circle cx="200" cy="320" r="4" fill="#111"/>
+  </g>
+
+  <!-- Initial arc from O -->
+  <path d="M320,220 A120,120 0 0 1 360,300" fill="none" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Intersecting arcs from points on arms -->
+  <g fill="none" stroke="#ef4444" stroke-width="2">
+    <path d="M320,220 A80,80 0 0 1 360,260"/>
+    <path d="M360,300 A80,80 0 0 0 320,260"/>
+  </g>
+
+  <!-- Bisector -->
+  <line x1="200" y1="320" x2="340" y2="240" stroke="#16a34a" stroke-width="3"/>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Draw arc from vertex; then intersecting arcs; join vertex to intersection</text>
+</svg>
+

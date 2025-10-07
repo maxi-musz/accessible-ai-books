@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#7c3aed"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Types of Data</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+
+  <!-- Qualitative data -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111">
+    <text x="100" y="130" fill="#7c3aed" font-weight="bold">Qualitative Data (Descriptive)</text>
+    <rect x="100" y="140" width="300" height="120" rx="8" ry="8" fill="#f3e8ff" stroke="#a855f7"/>
+    <text x="120" y="165" fill="#6b21a8">• Favorite color: Blue, Red, Green</text>
+    <text x="120" y="185" fill="#6b21a8">• Satisfaction level: Very satisfied</text>
+    <text x="120" y="205" fill="#6b21a8">• Grade level: A, B, C, D</text>
+    <text x="120" y="225" fill="#6b21a8">• Gender: Male, Female, Other</text>
+    <text x="120" y="245" fill="#6b21a8">• Opinion: Agree, Disagree, Neutral</text>
+  </g>
+
+  <!-- Quantitative data -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111">
+    <text x="450" y="130" fill="#16a34a" font-weight="bold">Quantitative Data (Numerical)</text>
+    <rect x="450" y="140" width="300" height="120" rx="8" ry="8" fill="#ecfdf5" stroke="#10b981"/>
+    <text x="470" y="165" fill="#065f46">• Height: 165 cm, 170 cm, 175 cm</text>
+    <text x="470" y="185" fill="#065f46">• Temperature: 25°C, 30°C, 35°C</text>
+    <text x="470" y="205" fill="#065f46">• Test scores: 85, 92, 78, 96</text>
+    <text x="470" y="225" fill="#065f46">• Number of students: 25, 30, 28</text>
+    <text x="470" y="245" fill="#065f46">• Distance: 5.2 km, 8.7 km</text>
+  </g>
+
+  <text x="400" y="360" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">Qualitative vs Quantitative data</text>
+</svg>

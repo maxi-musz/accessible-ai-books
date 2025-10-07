@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#7c2d12"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Pictograms</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#fef7ed" stroke="#7c2d12" stroke-width="2"/>
+
+  <!-- Chart title -->
+  <text x="400" y="120" font-family="Arial, Helvetica, sans-serif" font-size="16" text-anchor="middle" fill="#374151" font-weight="bold">Books Read This Month</text>
+
+  <!-- Legend -->
+  <text x="100" y="150" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">Each 📚 represents 2 books</text>
+
+  <!-- Pictogram data -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <!-- John -->
+    <text x="100" y="200" fill="#374151">John:</text>
+    <g transform="translate(150, 180)">
+      <text x="0" y="20" font-size="24">📚</text>
+      <text x="30" y="20" font-size="24">📚</text>
+      <text x="60" y="20" font-size="24">📚</text>
+      <text x="90" y="20" font-size="24">📚</text>
+      <text x="120" y="20" font-size="24">📚</text>
+    </g>
+    <text x="280" y="200" fill="#dc2626" font-weight="bold">10 books</text>
+
+    <!-- Sarah -->
+    <text x="100" y="240" fill="#374151">Sarah:</text>
+    <g transform="translate(150, 220)">
+      <text x="0" y="20" font-size="24">📚</text>
+      <text x="30" y="20" font-size="24">📚</text>
+      <text x="60" y="20" font-size="24">📚</text>
+      <text x="90" y="20" font-size="24">📚</text>
+      <text x="120" y="20" font-size="24">📚</text>
+      <text x="150" y="20" font-size="24">📚</text>
+    </g>
+    <text x="320" y="240" fill="#dc2626" font-weight="bold">12 books</text>
+
+    <!-- Mike -->
+    <text x="100" y="280" fill="#374151">Mike:</text>
+    <g transform="translate(150, 260)">
+      <text x="0" y="20" font-size="24">📚</text>
+      <text x="30" y="20" font-size="24">📚</text>
+      <text x="60" y="20" font-size="24">📚</text>
+    </g>
+    <text x="240" y="280" fill="#dc2626" font-weight="bold">6 books</text>
+
+    <!-- Lisa -->
+    <text x="100" y="320" fill="#374151">Lisa:</text>
+    <g transform="translate(150, 300)">
+      <text x="0" y="20" font-size="24">📚</text>
+      <text x="30" y="20" font-size="24">📚</text>
+      <text x="60" y="20" font-size="24">📚</text>
+      <text x="90" y="20" font-size="24">📚</text>
+    </g>
+    <text x="270" y="320" fill="#dc2626" font-weight="bold">8 books</text>
+  </g>
+
+  <!-- Alternative example -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6b7280">
+    <text x="500" y="200" fill="#374151">Alternative symbols:</text>
+    <text x="500" y="220" fill="#374151">🍎 = 5 apples</text>
+    <text x="500" y="240" fill="#374151">🏠 = 10 houses</text>
+    <text x="500" y="260" fill="#374151">🚗 = 3 cars</text>
+  </g>
+
+  <text x="400" y="360" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">Uses symbols to show data</text>
+</svg>

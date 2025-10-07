@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#0ea5e9"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Data Collection Methods</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+
+  <!-- Collection methods -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <rect x="100" y="130" width="140" height="80" rx="8" ry="8" fill="#f0f9ff" stroke="#0ea5e9"/>
+    <text x="170" y="150" text-anchor="middle" fill="#0c4a6e">Surveys &</text>
+    <text x="170" y="170" text-anchor="middle" fill="#0c4a6e">Questionnaires</text>
+    <text x="170" y="190" text-anchor="middle" fill="#0c4a6e">📋</text>
+
+    <rect x="280" y="130" width="140" height="80" rx="8" ry="8" fill="#f0fdf4" stroke="#22c55e"/>
+    <text x="350" y="150" text-anchor="middle" fill="#14532d">Direct</text>
+    <text x="350" y="170" text-anchor="middle" fill="#14532d">Observation</text>
+    <text x="350" y="190" text-anchor="middle" fill="#14532d">👁️</text>
+
+    <rect x="460" y="130" width="140" height="80" rx="8" ry="8" fill="#fefce8" stroke="#eab308"/>
+    <text x="530" y="150" text-anchor="middle" fill="#a16207">Experiments</text>
+    <text x="530" y="170" text-anchor="middle" fill="#a16207">& Tests</text>
+    <text x="530" y="190" text-anchor="middle" fill="#a16207">🧪</text>
+
+    <rect x="100" y="240" width="140" height="80" rx="8" ry="8" fill="#fdf2f8" stroke="#ec4899"/>
+    <text x="170" y="260" text-anchor="middle" fill="#be185d">Existing</text>
+    <text x="170" y="280" text-anchor="middle" fill="#be185d">Records</text>
+    <text x="170" y="300" text-anchor="middle" fill="#be185d">📊</text>
+
+    <rect x="280" y="240" width="140" height="80" rx="8" ry="8" fill="#f3e8ff" stroke="#a855f7"/>
+    <text x="350" y="260" text-anchor="middle" fill="#6b21a8">Interviews</text>
+    <text x="350" y="280" text-anchor="middle" fill="#6b21a8">& Focus</text>
+    <text x="350" y="300" text-anchor="middle" fill="#6b21a8">Groups</text>
+    <text x="350" y="320" text-anchor="middle" fill="#6b21a8">🎤</text>
+
+    <rect x="460" y="240" width="140" height="80" rx="8" ry="8" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="530" y="260" text-anchor="middle" fill="#92400e">Online</text>
+    <text x="530" y="280" text-anchor="middle" fill="#92400e">Data</text>
+    <text x="530" y="300" text-anchor="middle" fill="#92400e">Collection</text>
+    <text x="530" y="320" text-anchor="middle" fill="#92400e">💻</text>
+  </g>
+
+  <text x="400" y="360" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">Different methods for different data</text>
+</svg>

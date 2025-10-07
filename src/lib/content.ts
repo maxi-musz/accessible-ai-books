@@ -28,6 +28,12 @@ import jss1UseOfSymbols from "../content/data/jss-1/mathematics/basic-operations
 import jss1UseOfSymbolsContd from "../content/data/jss-1/mathematics/basic-operations/topic-10-use-of-symbols-continued";
 import jss1AlgSimplification from "../content/data/jss-1/mathematics/algebraic-processes/topic-1-simplification";
 import jss1SimpleEquations from "../content/data/jss-1/mathematics/algebraic-processes/topic-2-simple-equations";
+import jss1PlaneShapes from "../content/data/jss-1/mathematics/mensuration-and-geometry/topic-1-plane-shapes";
+import jss1ThreeDimensionalFigures from "../content/data/jss-1/mathematics/mensuration-and-geometry/topic-2-three-dimensional-figures";
+import jss1Construction from "../content/data/jss-1/mathematics/mensuration-and-geometry/topic-3-construction";
+import jss1Angles from "../content/data/jss-1/mathematics/mensuration-and-geometry/topic-4-angles";
+import jss1NeedsForStatistics from "../content/data/jss-1/mathematics/everyday-statistics/topic-1-needs-for-statistics";
+import jss1DataRepresentation from "../content/data/jss-1/mathematics/everyday-statistics/topic-2-data-representation";
 
 import { ClassRegistry, Topic } from "@/content/schema";
 
@@ -74,14 +80,14 @@ const registry: ClassRegistry = {
             { ...jss1SimpleEquations, completed: false, chapter: "Algebraic Processes" },
           ],
           "Mensuration and Geometry": [
-            { class: "JSS 1", subject: "Mathematics", chapter: "Mensuration and Geometry", slug: "plane-shapes", title: "Plane Shapes", order: 19, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Mensuration and Geometry", slug: "three-dimensional-figures", title: "Three dimensional Figures", order: 20, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Mensuration and Geometry", slug: "construction", title: "Construction", order: 21, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Mensuration and Geometry", slug: "angles", title: "Angles", order: 22, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1PlaneShapes, completed: false, chapter: "Mensuration and Geometry" },
+            { ...jss1ThreeDimensionalFigures, completed: false, chapter: "Mensuration and Geometry" },
+            { ...jss1Construction, completed: false, chapter: "Mensuration and Geometry" },
+            { ...jss1Angles, completed: false, chapter: "Mensuration and Geometry" },
           ],
           "Everyday Statistics": [
-            { class: "JSS 1", subject: "Mathematics", chapter: "Everyday Statistics", slug: "needs-for-statistics", title: "Needs for statistics", order: 23, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
-            { class: "JSS 1", subject: "Mathematics", chapter: "Everyday Statistics", slug: "data-representation", title: "Data representation", order: 24, completed: false, data: { performanceObjective: "", contents: [], teacherActivities: [], studentActivities: [], materials: [], evaluationGuide: [], pages: [] } },
+            { ...jss1NeedsForStatistics, completed: false, chapter: "Everyday Statistics" },
+            { ...jss1DataRepresentation, completed: false, chapter: "Everyday Statistics" },
           ]
         }
       },

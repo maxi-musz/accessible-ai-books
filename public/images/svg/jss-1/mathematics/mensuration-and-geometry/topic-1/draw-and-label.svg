@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#16a34a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Draw and Label</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Example drawings -->
+  <g fill="none" stroke="#111" stroke-width="3">
+    <polygon points="140,200 100,280 180,280"/>
+    <rect x="260" y="200" width="140" height="80"/>
+    <circle cx="560" cy="240" r="40"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <text x="140" y="300" text-anchor="middle">Isosceles triangle</text>
+    <text x="330" y="300" text-anchor="middle">Rectangle 6×3 cm</text>
+    <text x="560" y="300" text-anchor="middle">Circle (compass)</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Use ruler and compass; add equal-side and right-angle marks where needed</text>
+</svg>
+

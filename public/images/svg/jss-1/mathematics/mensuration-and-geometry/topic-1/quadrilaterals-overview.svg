@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#7c3aed"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Quadrilaterals</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+
+  <g fill="none" stroke-width="3">
+    <rect x="120" y="200" width="110" height="90" stroke="#2563eb"/>
+    <rect x="280" y="200" width="110" height="90" stroke="#16a34a"/>
+    <polygon points="460,200 590,200 540,290 410,290" stroke="#ef4444"/>
+    <polygon points="610,200 730,200 710,290 590,290" stroke="#f59e0b"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <text x="175" y="315" text-anchor="middle">Square</text>
+    <text x="335" y="315" text-anchor="middle">Rectangle</text>
+    <text x="500" y="315" text-anchor="middle">Parallelogram</text>
+    <text x="670" y="315" text-anchor="middle">Trapezium</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Use distinct stroke colors; keep labels centered and clear</text>
+</svg>
+

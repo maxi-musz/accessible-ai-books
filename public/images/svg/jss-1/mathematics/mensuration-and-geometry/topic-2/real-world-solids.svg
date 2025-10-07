@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#16a34a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Solids Around Us</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111">
+    <text x="120" y="150">Dice → Cube</text>
+    <text x="120" y="185">Cereal box → Cuboid</text>
+    <text x="120" y="220">Can → Cylinder</text>
+    <text x="120" y="255">Ice-cream cone → Cone</text>
+    <text x="120" y="290">Ball → Sphere</text>
+    <text x="120" y="325">Roof top → Pyramid</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Map common objects to solids; keep typography clean for print</text>
+</svg>
+

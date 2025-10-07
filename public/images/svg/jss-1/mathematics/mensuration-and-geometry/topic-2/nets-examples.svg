@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#7c3aed"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Nets of Solids</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+
+  <!-- Cube net (cross) -->
+  <g fill="none" stroke="#2563eb" stroke-width="3">
+    <rect x="110" y="180" width="40" height="40"/>
+    <rect x="150" y="180" width="40" height="40"/>
+    <rect x="190" y="180" width="40" height="40"/>
+    <rect x="150" y="140" width="40" height="40"/>
+    <rect x="150" y="220" width="40" height="40"/>
+  </g>
+
+  <!-- Cuboid net (row) -->
+  <g fill="none" stroke="#16a34a" stroke-width="3">
+    <rect x="300" y="180" width="50" height="40"/>
+    <rect x="350" y="180" width="80" height="40"/>
+    <rect x="430" y="180" width="50" height="40"/>
+    <rect x="350" y="140" width="80" height="40"/>
+    <rect x="350" y="220" width="80" height="40"/>
+  </g>
+
+  <!-- Pyramid net -->
+  <g fill="none" stroke="#ef4444" stroke-width="3">
+    <rect x="560" y="200" width="60" height="60"/>
+    <polygon points="560,200 590,160 620,200"/>
+    <polygon points="560,260 590,300 620,260"/>
+    <polygon points="560,200 520,230 560,260"/>
+    <polygon points="620,200 660,230 620,260"/>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Use clear outlines and spacing; labels can be added in content captions</text>
+</svg>
+

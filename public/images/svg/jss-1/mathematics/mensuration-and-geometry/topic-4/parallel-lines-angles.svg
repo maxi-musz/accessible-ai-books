@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#16a34a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Angles in Parallel Lines</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Parallel lines -->
+  <g stroke="#111" stroke-width="3" fill="none">
+    <line x1="100" y1="200" x2="700" y2="200"/>
+    <line x1="100" y1="300" x2="700" y2="300"/>
+  </g>
+
+  <!-- Transversal -->
+  <line x1="200" y1="150" x2="600" y2="350" stroke="#2563eb" stroke-width="3"/>
+
+  <!-- Corresponding angles -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#2563eb">
+    <text x="250" y="190" text-anchor="middle">∠1</text>
+    <text x="450" y="310" text-anchor="middle">∠5</text>
+  </g>
+
+  <!-- Alternate angles -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#ef4444">
+    <text x="350" y="190" text-anchor="middle">∠3</text>
+    <text x="450" y="310" text-anchor="middle">∠6</text>
+  </g>
+
+  <!-- Co-interior angles -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#f59e0b">
+    <text x="350" y="190" text-anchor="middle">∠3</text>
+    <text x="250" y="310" text-anchor="middle">∠5</text>
+  </g>
+
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle" fill="#374151">Color-code angle types; corresponding (blue), alternate (red), co-interior (orange)</text>
+</svg>

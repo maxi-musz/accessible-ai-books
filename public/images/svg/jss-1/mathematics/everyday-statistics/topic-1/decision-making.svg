@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
+  <rect width="800" height="440" fill="#ffffff"/>
+
+  <rect x="0" y="0" width="800" height="60" fill="#16a34a"/>
+  <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Statistics in Decision-Making</text>
+
+  <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Decision process flow -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <rect x="100" y="130" width="120" height="60" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="160" y="150" text-anchor="middle" fill="#1e40af">Collect</text>
+    <text x="160" y="170" text-anchor="middle" fill="#1e40af">Data</text>
+
+    <rect x="250" y="130" width="120" height="60" rx="8" ry="8" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="310" y="150" text-anchor="middle" fill="#92400e">Analyze</text>
+    <text x="310" y="170" text-anchor="middle" fill="#92400e">Patterns</text>
+
+    <rect x="400" y="130" width="120" height="60" rx="8" ry="8" fill="#fce7f3" stroke="#ec4899"/>
+    <text x="460" y="150" text-anchor="middle" fill="#be185d">Compare</text>
+    <text x="460" y="170" text-anchor="middle" fill="#be185d">Options</text>
+
+    <rect x="550" y="130" width="120" height="60" rx="8" ry="8" fill="#dcfce7" stroke="#22c55e"/>
+    <text x="610" y="150" text-anchor="middle" fill="#14532d">Make</text>
+    <text x="610" y="170" text-anchor="middle" fill="#14532d">Decision</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#6b7280" stroke-width="2" fill="none">
+    <path d="M220 160 L250 160" marker-end="url(#arrowhead)"/>
+    <path d="M370 160 L400 160" marker-end="url(#arrowhead)"/>
+    <path d="M520 160 L550 160" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Examples -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+    <text x="100" y="240" fill="#374151">Examples:</text>
+    <text x="100" y="260" fill="#111">• Which product to buy (price vs quality data)</text>
+    <text x="100" y="280" fill="#111">• Which route to take (traffic vs distance data)</text>
+    <text x="100" y="300" fill="#111">• Which treatment to choose (success rate data)</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="360" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" fill="#6b7280">Supports better decision-making</text>
+</svg>
