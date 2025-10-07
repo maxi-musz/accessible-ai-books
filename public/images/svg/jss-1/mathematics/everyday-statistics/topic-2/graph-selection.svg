@@ -1,65 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440">
   <rect width="800" height="440" fill="#ffffff"/>
 
+  <!-- Header -->
   <rect x="0" y="0" width="800" height="60" fill="#7c2d12"/>
   <text x="400" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">Choosing the Right Graph</text>
 
+  <!-- Main container -->
   <rect x="60" y="90" width="680" height="280" rx="14" ry="14" fill="#fef7ed" stroke="#7c2d12" stroke-width="2"/>
 
-  <!-- Decision tree -->
-  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
-    <!-- Start -->
-    <rect x="350" y="120" width="100" height="40" rx="20" ry="20" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-    <text x="400" y="145" text-anchor="middle" fill="#92400e" font-weight="bold">What type of data?</text>
+  <!-- Decision flow -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#111">
+    <!-- Start question -->
+    <rect x="320" y="110" width="160" height="35" rx="18" ry="18" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+    <text x="400" y="132" text-anchor="middle" fill="#92400e" font-weight="bold">What type of data?</text>
 
-    <!-- Arrows -->
-    <path d="M 400,160 L 400,200" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <!-- Down arrow -->
+    <path d="M 400,145 L 400,170" stroke="#6b7280" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
 
-    <!-- Categories -->
-    <rect x="200" y="220" width="120" height="60" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6"/>
-    <text x="260" y="240" text-anchor="middle" fill="#1e40af" font-weight="bold">Categories</text>
-    <text x="260" y="255" text-anchor="middle" fill="#1e40af">(favorite colors,</text>
-    <text x="260" y="270" text-anchor="middle" fill="#1e40af">subjects, etc.)</text>
+    <!-- Data type options -->
+    <rect x="150" y="180" width="140" height="50" rx="8" ry="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="220" y="200" text-anchor="middle" fill="#1e40af" font-weight="bold">Categories</text>
+    <text x="220" y="215" text-anchor="middle" fill="#1e40af">(colors, subjects)</text>
 
-    <rect x="480" y="220" width="120" height="60" rx="8" ry="8" fill="#dcfce7" stroke="#22c55e"/>
-    <text x="540" y="240" text-anchor="middle" fill="#14532d" font-weight="bold">Time Series</text>
-    <text x="540" y="255" text-anchor="middle" fill="#14532d">(temperature over</text>
-    <text x="540" y="270" text-anchor="middle" fill="#14532d">time, sales, etc.)</text>
-
-    <!-- Arrows from categories -->
-    <path d="M 260,220 L 260,180" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 540,220 L 540,180" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-
-    <!-- Bar chart -->
-    <rect x="120" y="120" width="100" height="50" rx="8" ry="8" fill="#3b82f6" stroke="#1e40af"/>
-    <text x="170" y="140" text-anchor="middle" fill="#ffffff" font-weight="bold">Bar Chart</text>
-    <text x="170" y="155" text-anchor="middle" fill="#ffffff">Best for</text>
-
-    <!-- Pie chart -->
-    <rect x="240" y="120" width="100" height="50" rx="8" ry="8" fill="#10b981" stroke="#14532d"/>
-    <text x="290" y="140" text-anchor="middle" fill="#ffffff" font-weight="bold">Pie Chart</text>
-    <text x="290" y="155" text-anchor="middle" fill="#ffffff">Parts of whole</text>
-
-    <!-- Line graph -->
-    <rect x="460" y="120" width="100" height="50" rx="8" ry="8" fill="#f59e0b" stroke="#92400e"/>
-    <text x="510" y="140" text-anchor="middle" fill="#ffffff" font-weight="bold">Line Graph</text>
-    <text x="510" y="155" text-anchor="middle" fill="#ffffff">Trends over time</text>
-
-    <!-- Pictogram -->
-    <rect x="580" y="120" width="100" height="50" rx="8" ry="8" fill="#8b5cf6" stroke="#6b21a8"/>
-    <text x="630" y="140" text-anchor="middle" fill="#ffffff" font-weight="bold">Pictogram</text>
-    <text x="630" y="155" text-anchor="middle" fill="#ffffff">Simple counts</text>
+    <rect x="510" y="180" width="140" height="50" rx="8" ry="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+    <text x="580" y="200" text-anchor="middle" fill="#14532d" font-weight="bold">Time Series</text>
+    <text x="580" y="215" text-anchor="middle" fill="#14532d">(over time)</text>
 
     <!-- Arrows to graph types -->
-    <path d="M 200,250 L 170,170" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 320,250 L 290,170" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 480,250 L 510,170" stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 600,250 L 630,170" stroke="#8b5cf6" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 220,180 L 220,150" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 580,180 L 580,150" stroke="#22c55e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
 
-    <!-- Guidelines -->
-    <rect x="100" y="320" width="600" height="40" rx="8" ry="8" fill="#f3f4f6" stroke="#9ca3af"/>
-    <text x="400" y="340" text-anchor="middle" fill="#374151" font-weight="bold">Quick Decision Guide:</text>
-    <text x="400" y="355" text-anchor="middle" fill="#6b7280">Compare categories → Bar Chart | Show proportions → Pie Chart | Track changes → Line Graph | Simple data → Pictogram</text>
+    <!-- Graph type boxes -->
+    <rect x="80" y="100" width="120" height="40" rx="8" ry="8" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+    <text x="140" y="120" text-anchor="middle" fill="#ffffff" font-weight="bold">Bar Chart</text>
+    <text x="140" y="135" text-anchor="middle" fill="#ffffff" font-size="11">Compare categories</text>
+
+    <rect x="220" y="100" width="120" height="40" rx="8" ry="8" fill="#10b981" stroke="#14532d" stroke-width="2"/>
+    <text x="280" y="120" text-anchor="middle" fill="#ffffff" font-weight="bold">Pie Chart</text>
+    <text x="280" y="135" text-anchor="middle" fill="#ffffff" font-size="11">Parts of whole</text>
+
+    <rect x="500" y="100" width="120" height="40" rx="8" ry="8" fill="#f59e0b" stroke="#92400e" stroke-width="2"/>
+    <text x="560" y="120" text-anchor="middle" fill="#ffffff" font-weight="bold">Line Graph</text>
+    <text x="560" y="135" text-anchor="middle" fill="#ffffff" font-size="11">Trends over time</text>
+
+    <rect x="620" y="100" width="120" height="40" rx="8" ry="8" fill="#8b5cf6" stroke="#6b21a8" stroke-width="2"/>
+    <text x="680" y="120" text-anchor="middle" fill="#ffffff" font-weight="bold">Pictogram</text>
+    <text x="680" y="135" text-anchor="middle" fill="#ffffff" font-size="11">Simple counts</text>
+
+    <!-- Decision guide -->
+    <rect x="100" y="250" width="600" height="100" rx="8" ry="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="400" y="275" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">Quick Decision Guide</text>
+    
+    <text x="120" y="300" fill="#374151" font-size="12">• <tspan fill="#3b82f6" font-weight="bold">Bar Chart:</tspan> Compare different categories</text>
+    <text x="120" y="315" fill="#374151" font-size="12">• <tspan fill="#10b981" font-weight="bold">Pie Chart:</tspan> Show parts of a whole</text>
+    <text x="120" y="330" fill="#374151" font-size="12">• <tspan fill="#f59e0b" font-weight="bold">Line Graph:</tspan> Track changes over time</text>
+    <text x="120" y="345" fill="#374151" font-size="12">• <tspan fill="#8b5cf6" font-weight="bold">Pictogram:</tspan> Simple visual counts</text>
   </g>
 
   <defs>

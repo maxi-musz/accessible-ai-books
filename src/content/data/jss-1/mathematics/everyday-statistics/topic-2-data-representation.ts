@@ -71,7 +71,7 @@ const topic: Topic = {
         blocks: [
           { type: "heading", content: "Showing Proportions" },
           { type: "paragraph", content: "Pie charts divide a circle into sectors, where each sector's angle is proportional to the data value. They show parts of a whole." },
-          { type: "image", src: "/images/svg/jss-1/mathematics/everyday-statistics/topic-2/pie-chart.svg", alt: "Pie chart example with sectors and percentages", caption: "Pie charts show proportions of a whole", width: 800, style: "inline" },
+          { type: "image", src: "/images/svg/jss-1/mathematics/everyday-statistics/topic-2/c0HsL.jpg", alt: "Pie chart example with sectors and percentages", caption: "Pie charts show proportions of a whole", width: 800, style: "inline" },
           { type: "list", title: "Construction Steps", items: [
             "Calculate angle for each sector: (value/total) × 360°",
             "Draw circle and mark center",
